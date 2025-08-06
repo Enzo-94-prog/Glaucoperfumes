@@ -1,0 +1,400 @@
+
+/* PARTE 1 – Variabili, Navbar, Hamburger menu */
+
+/* Variabili globali per colori principali */
+:root {
+    --main-green: rgb(91, 159, 57);
+    --backgroundBody: rgb(0, 128, 45); /* per debugging */
+    --backgroundHeader: rgb(0, 204, 255); /* per debugging */
+    --backgroundMain: rgb(0, 145, 255); /* per debugging */
+    --background: #f5f9f6;
+    --text: #333;
+    --white: #fff;
+    --gray: #ccc;
+}
+
+
+/* Stile principale della barra di navigazione (navbar):
+   - Layout a flexbox per distribuire gli elementi con spazio tra di loro
+   - Allineamento verticale centrato
+   - Padding interno di 1 rem
+   - Permette il wrapping degli elementi se necessario (flex-wrap: wrap)
+   - Posizione sticky per mantenere la navbar visibile in cima alla pagina durante lo scroll
+   - Sfondo trasparente con effetto di sfocatura (blur) di 25px dietro la navbar
+   - Transizioni fluide di colore di sfondo e filtro sfocatura in 0.3 secondi
+   - Z-index alto per assicurare che la navbar sia sopra altri elementi */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    flex-wrap: nowrap;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(25px);
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+
+/* Quando la navbar ha la classe 'menu-open' (menu aperto),
+   imposta lo sfondo bianco pieno e rimuove l'effetto di sfocatura (blur).
+   L'uso di !important assicura che il backdrop-filter venga disattivato,
+   sovrascrivendo eventuali altre regole CSS. */
+.navbar.menu-open {
+    background-color: #fff;
+    backdrop-filter: none !important;
+}
+
+
+
+
+/* PARTE 2 – Struttura della navbar e hamburger */
+
+/* Contenitore interno della navbar */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    position: relative;
+}
+
+
+/* Ordine degli elementi */
+.hamburger {
+    order: 1; /* a sinistra */
+}
+
+.navbar-logo {
+    order: 2;          /* al centro */
+}
+
+.navbar-icons {
+    order: 3;              /* a destra */
+    margin-left: auto;     /* spinge le icone a destra */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+/* Stile per il logo nella navbar */
+.navbar-logo {
+    display: flex;                 /* Permette il corretto allineamento dell'immagine */
+    align-items: center;          /* Centra verticalmente il logo */
+    text-decoration: none;        /* Nessuna sottolineatura se è un link */
+    margin-right: auto; 
+}
+
+
+/* Stile per l'immagine del logo PNG */
+.logo-img {
+    height: 3rem;            /* Altezza ottimale (≈ 40px) adattabile con unità relative */
+    width: auto;             /* Mantiene le proporzioni dell'immagine */
+    transform: scale(2.8);   /* Ingrandisce visivamente */
+    transform-origin: left center;  /* Punto di origine dell’ingrandimento */
+    display: block;          /* Elimina spazi indesiderati */
+    object-fit: contain;     /* Mantiene l'integrità del logo */
+}
+
+
+/* Stile per il pulsante hamburger (icona menu) */
+.hamburger {
+    position: relative;
+    width: 30px;
+    height: 22px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--text);
+    margin-right: 1rem;
+}
+
+
+/* Linee hamburger */
+.hamburger::before,
+.hamburger::after,
+.hamburger span {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--text);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.hamburger span {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hamburger::before {
+    top: 0;
+}
+
+.hamburger::after {
+    bottom: 0;
+}
+
+
+/* Trasformazione in X */
+.hamburger.active::before {
+    transform: rotate(45deg);
+    top: 50%;
+}
+
+.hamburger.active::after {
+    transform: rotate(-45deg);
+    bottom: 50%;
+}
+
+.hamburger.active span {
+    opacity: 0;
+}
+
+
+
+
+/* PARTE 3 – Link, icone, lingua */
+
+/* Lista link */
+.navbar-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 70%;
+    background-color: var(--white);
+    flex-direction: column;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+    list-style: none;
+    gap: 1rem;
+    margin: 0;
+}
+
+.navbar-links.active {
+    display: flex;
+}
+
+.navbar-links li {
+    width: 100%;
+    text-align: left;
+}
+
+
+/* Link */
+.navbar-links li a {
+    text-decoration: none !important;
+    color: var(--text) !important;
+    position: relative;
+}
+
+.navbar-links li a:hover {
+    color: var(--main-green);
+}
+
+.navbar-links li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--main-green);
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar-links li a:hover::after {
+    width: 100%;
+}
+
+
+/* Icone */
+.icon-img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.icon-img:hover {
+    opacity: 0.7;
+}
+
+
+/* Selettore lingua */
+.language-select {
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    cursor: pointer;
+    color: var(--text);
+}
+
+.language-select:focus {
+    outline: none;
+}
+
+
+
+
+/* PARTE 4 – Barra di ricerca */
+
+/* Contenitore centrato della search-bar */
+.search-bar {
+  width: 90vw;                    /* Occupa fino al 90% della viewport */
+  max-width: 300px;               /* Non supera i 300px */
+  margin: 0.5em auto;             /* Centro orizzontale con margine verticale */
+  padding: 0em;                   /* Padding verticale */
+  box-sizing: border-box;
+}
+
+/* Campo di input */
+.search-bar input[type="text"] {
+  width: 100%;                   /* Occupa tutta la larghezza del contenitore */
+  padding: 0.75em 1em;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px var(--grey);
+  outline-offset: 2px;
+}
+
+
+
+/* PARTE 5 – Stili di base per l'header, il body e il main della pagina */
+
+header {
+    background-color: var(--backgroundHeader); /* per debugging */
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-style: italic;
+    font-size: 1.4rem;
+    color: var(--text);
+}
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text);
+    line-height: 1.6;
+    
+    background-color: var(--backgroundBody); /* per debugging */
+}
+
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;;
+    padding: 0.5rem;
+    
+    background-color: var(--backgroundMain); /* per debugging */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Lista dei report */
+.report-list {
+    display: grid;
+    gap: 1rem;
+}
+
+
+/* Card del report */
+.report-card {
+    background-color: var(--white);
+    border-left: 6px solid var(--main-green);
+    padding: 1.2rem;
+    border-radius: 8px;
+    transition: box-shadow 0.3s;
+}
+
+.report-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Titolo del report */
+.report-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+/* Metadati del report */
+.report-meta {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+
+/* Immagine anteprima del report */
+.report-preview {
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+
+/* Pulsante di download */
+.download-btn {
+    margin-top: 0.8rem;
+    display: inline-block;
+    background-color: var(--main-green);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: var(--dark-green);
+}
+
+
+/* Footer */
+footer {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}

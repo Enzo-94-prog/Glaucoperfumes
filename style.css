@@ -307,7 +307,9 @@ main {
 
 
 /* video container */
-.video-container iframe {
+.video-container {
+    display: flex;           /* usa flexbox per centrare */
+    justify-content: center; /* centratura orizzontale */
     max-width: 100%;
     height: auto;
 }

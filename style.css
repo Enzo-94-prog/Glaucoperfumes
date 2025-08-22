@@ -306,7 +306,11 @@ main {
 
 
 
-
+/* video container */
+.video-container iframe {
+    max-width: 100%;
+    height: auto;
+}
 
 
 

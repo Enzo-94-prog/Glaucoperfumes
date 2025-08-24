@@ -38,7 +38,7 @@
         <div class="navbar-container">
             
 
-            <!-- Pulsante hamburger visibile in modalità mobile per aprire o chiudere il menu -->
+            <!-- Pulsante hamburger per aprire o chiudere il menu -->
             <button class="hamburger" id="hamburger"><span></span></button>
             
 
@@ -57,19 +57,7 @@
                 <li><a href="#" class="nav-item" data-key="business"> Business </a></li>
                 <li><a href="#" class="nav-item" data-key="support"> Support </a></li>
             </ul>
-            
-
-            <!-- Sezione con le icone utente, carrello e selettore lingua -->
-            <div class="navbar-icons">
-                <span></span> <!-- Aggiunge uno spazio visivo tra il logo e l'icona user -->
-                <img src="img/user.svg" alt="User" class="icon-img">
-                <!-- <img src="img/cart.svg" alt="Cart" class="icon-img"> -->
-                <select id="language-switcher" class="language-select">
-                    <option value="it"> 🇮🇹 IT </option>
-                    <option value="en"> 🇬🇧 EN </option>
-                </select>
-
-            </div>
+    
 
         </div>
 
@@ -83,15 +71,14 @@
         </h1>       
     </header>
 
+    
 
 
     <!-- Sezione principale del contenuto -->
     <main>
 
-
-        <!-- Contenitore vuoto in cui verranno inseriti dinamicamente i report tramite JavaScript -->
-        <div class="report-list" id="reportList"></div>
-
+        <!-- Contenitore vuoto in cui verranno inseriti dinamicamente i profumi tramite JavaScript -->
+        <div class="perfume-list" id="perfume-list"></div>
 
     </main>
     
@@ -106,7 +93,7 @@
 
     <!-- Inclusione degli script -->
     <script src="/js/navbar.js"></script>
-    <script src="/data/perfumes.js"></script>
+    <script src="/js/script_data.js"></script>
     
 </body>
 

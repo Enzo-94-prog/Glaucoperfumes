@@ -2,26 +2,262 @@
 [
   {
     "id": 1,
-    "name": "Profumo 1",
-    "brand": "Brand A",
-    "category": "Eau de Parfum",
-    "notes": "Agrumi, vaniglia, legni",
-    "price": "€59,90",
-    "image": "img/profumo1.jpg",
-    "description": "Un profumo fresco con note agrumate e un fondo legnoso."
+    "name": "4711 Original Eau de Cologne",
+    "brand": "4711",
+    "category": "Eau de Cologne",
+    "notes": "Agrumi freschi, lavanda, erbe aromatiche",
+    "price": "€39,90",
+    "image": "img/4711.png",
+    "description": "Un classico intramontabile, fresco e vivace."
   },
   {
     "id": 2,
-    "name": "Profumo 2",
-    "brand": "Brand B",
+    "name": "Acqua di Giò - Profumo",
+    "brand": "Giorgio Armani",
+    "category": "Eau de Parfum",
+    "notes": "Note marine, bergamotto, incenso",
+    "price": "€95,00",
+    "image": "img/acquadigio.jpg",
+    "description": "Elegante e intenso, un’icona della profumeria maschile."
+  },
+  {
+    "id": 3,
+    "name": "Acqua di Parma Colonia",
+    "brand": "Acqua di Parma",
+    "category": "Eau de Cologne",
+    "notes": "Agrumi italiani, lavanda, rosa, vetiver",
+    "price": "€110,00",
+    "image": "img/acquadiparma.jpg",
+    "description": "Un profumo raffinato con un tocco classico e luminoso."
+  },
+  {
+    "id": 4,
+    "name": "Ambassador Intense",
+    "brand": "Gisada",
+    "category": "Eau de Parfum",
+    "notes": "Spezie, legni, vaniglia",
+    "price": "€89,00",
+    "image": "img/ambassadorintense.jpg",
+    "description": "Moderno e avvolgente, perfetto per serate speciali."
+  },
+  {
+    "id": 5,
+    "name": "Amber Oud Gold Edition",
+    "brand": "Al Haramain",
+    "category": "Eau de Parfum",
+    "notes": "Ambra, oud, vaniglia dolce",
+    "price": "€75,00",
+    "image": "img/amberoudgold.jpg",
+    "description": "Un mix opulento e sensuale, ricco di personalità."
+  },
+  {
+    "id": 6,
+    "name": "Ambraliquida",
+    "brand": "L'Erbolario",
+    "category": "Eau de Parfum",
+    "notes": "Ambra, legni caldi, note balsamiche",
+    "price": "€49,00",
+    "image": "img/ambraliquida.jpg",
+    "description": "Una fragranza avvolgente e rassicurante."
+  },
+  {
+    "id": 7,
+    "name": "Artisan Pure",
+    "brand": "John Varvatos",
     "category": "Eau de Toilette",
-    "notes": "Lavanda, muschio, ambra",
+    "notes": "Agrumi, erbe aromatiche, legni chiari",
+    "price": "€69,90",
+    "image": "img/artisanpure.jpg",
+    "description": "Fresco e naturale, ispirato a paesaggi luminosi."
+  },
+  {
+    "id": 8,
+    "name": "Blue Sand",
+    "brand": "Yodeyma",
+    "category": "Eau de Parfum",
+    "notes": "Note marine, muschio, agrumi",
+    "price": "€25,00",
+    "image": "img/bluesand.jpg",
+    "description": "Economico ma sorprendente, fresco e dinamico."
+  },
+  {
+    "id": 9,
+    "name": "Bogoss Vibrant Leather",
+    "brand": "Zara",
+    "category": "Eau de Parfum",
+    "notes": "Pelle, agrumi, muschio",
+    "price": "€35,00",
+    "image": "img/bogossvibrantleather.jpg",
+    "description": "Un mix moderno e giovanile con carattere deciso."
+  },
+  {
+    "id": 10,
+    "name": "Bondage Hommes",
+    "brand": "Milton Lloyd",
+    "category": "Eau de Toilette",
+    "notes": "Spezie, legni, note orientali",
+    "price": "€19,90",
+    "image": "img/bondagehommes.jpg",
+    "description": "Fragranza economica con sorprendente intensità."
+  },
+  {
+    "id": 11,
+    "name": "Détour Noir",
+    "brand": "Al Haramain Perfumes",
+    "category": "Eau de Parfum",
+    "notes": "Vaniglia, lavanda, ambra",
+    "price": "€59,00",
+    "image": "img/detournoir.jpg",
+    "description": "Caldo e seducente, perfetto per l’inverno."
+  },
+  {
+    "id": 12,
+    "name": "Dior Homme",
+    "brand": "Dior",
+    "category": "Eau de Toilette",
+    "notes": "Iris, cuoio, vetiver",
+    "price": "€89,00",
+    "image": "img/diorhomme.jpg",
+    "description": "Eleganza moderna con un tocco floreale maschile."
+  },
+  {
+    "id": 13,
+    "name": "Dsquared2 2WOOD",
+    "brand": "Dsquared2",
+    "category": "Eau de Toilette",
+    "notes": "Legni, agrumi, muschio",
+    "price": "€55,00",
+    "image": "img/2wood.jpg",
+    "description": "Giovanile e dinamico, ideale per tutti i giorni."
+  },
+  {
+    "id": 14,
+    "name": "Explorer",
+    "brand": "Montblanc",
+    "category": "Eau de Parfum",
+    "notes": "Bergamotto, vetiver, patchouli",
+    "price": "€75,00",
+    "image": "img/explorer.jpg",
+    "description": "Un profumo avventuroso e deciso."
+  },
+  {
+    "id": 15,
+    "name": "Il Profumo dei Piccoli",
+    "brand": "L'Erbolario",
+    "category": "Acqua Profumata",
+    "notes": "Fiori delicati, agrumi, muschio bianco",
+    "price": "€29,90",
+    "image": "img/profumodeipiccoli.jpg",
+    "description": "Una fragranza delicata pensata per i più piccoli."
+  },
+  {
+    "id": 16,
+    "name": "Impact Intense",
+    "brand": "Tommy Hilfiger",
+    "category": "Eau de Parfum",
+    "notes": "Note fruttate, cacao, legni ambrati",
+    "price": "€65,00",
+    "image": "img/impactintense.jpg",
+    "description": "Energetico e moderno, pensato per giovani dinamici."
+  },
+  {
+    "id": 17,
+    "name": "Jimmy Choo Man Aqua",
+    "brand": "Jimmy Choo",
+    "category": "Eau de Toilette",
+    "notes": "Note marine, pepe, patchouli",
+    "price": "€72,00",
+    "image": "img/jimmychooman.jpg",
+    "description": "Fresco e vivace, perfetto per l’estate."
+  },
+  {
+    "id": 18,
+    "name": "Khamrah Qahwa",
+    "brand": "Lattafa Perfumes",
+    "category": "Eau de Parfum",
+    "notes": "Caffè, spezie, vaniglia",
     "price": "€49,90",
-    "image": "img/profumo2.jpg",
-    "description": "Fragranza elegante con un cuore floreale e base calda."
+    "image": "img/khamrahqahwa.jpg",
+    "description": "Caldo e gourmand, ideale nelle stagioni fredde."
+  },
+  {
+    "id": 19,
+    "name": "L’Homme Ideal Eau de Parfum",
+    "brand": "Guerlain",
+    "category": "Eau de Parfum",
+    "notes": "Mandorla, cuoio, vaniglia",
+    "price": "€95,00",
+    "image": "img/lhommeideal.jpg",
+    "description": "Raffinato e sensuale, un classico maschile moderno."
+  },
+  {
+    "id": 20,
+    "name": "L'Homme Lacoste Intense",
+    "brand": "Lacoste Fragrances",
+    "category": "Eau de Toilette",
+    "notes": "Agrumi, spezie, legni",
+    "price": "€65,00",
+    "image": "img/lacostehomme.jpg",
+    "description": "Sportivo ed elegante, versatile per ogni occasione."
+  },
+  {
+    "id": 21,
+    "name": "Maahir Legacy",
+    "brand": "Lattafa Perfumes",
+    "category": "Eau de Parfum",
+    "notes": "Note speziate, legni orientali, ambra",
+    "price": "€55,00",
+    "image": "img/maahirlegacy.jpg",
+    "description": "Orientale e intenso, con grande persistenza."
+  },
+  {
+    "id": 22,
+    "name": "Molecule 02",
+    "brand": "Escentric Molecules",
+    "category": "Eau de Toilette",
+    "notes": "Ambroxan puro",
+    "price": "€99,00",
+    "image": "img/molecule02.jpg",
+    "description": "Minimalista e unico, basato su una sola molecola."
+  },
+  {
+    "id": 23,
+    "name": "Osaïto",
+    "brand": "M. Micallef",
+    "category": "Eau de Parfum",
+    "notes": "Agrumi, note marine, legni aromatici",
+    "price": "€120,00",
+    "image": "img/osaito.jpg",
+    "description": "Eleganza mediterranea con spirito raffinato."
+  },
+  {
+    "id": 24,
+    "name": "Prada L'Homme",
+    "brand": "Prada",
+    "category": "Eau de Toilette",
+    "notes": "Iris, ambra, patchouli",
+    "price": "€89,00",
+    "image": "img/pradalhomme.jpg",
+    "description": "Sofisticato e moderno, con un cuore floreale maschile."
+  },
+  {
+    "id": 25,
+    "name": "Pure Musk",
+    "brand": "Afnan",
+    "category": "Eau de Parfum",
+    "notes": "Muschio bianco, fiori puliti",
+    "price": "€45,00",
+    "image": "img/puremusk.jpg",
+    "description": "Semplice e pulito, ideale per chi ama fragranze leggere."
+  },
+  {
+    "id": 26,
+    "name": "Sauvage Eau de Parfum",
+    "brand": "Dior",
+    "category": "Eau de Parfum",
+    "notes": "Bergamotto, ambroxan, vaniglia",
+    "price": "€99,00",
+    "image": "img/sauvage.jpg",
+    "description": "Potente e iconico, una fragranza che non passa inosservata."
   }
 ]
-
-
-
-

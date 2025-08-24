@@ -1,0 +1,133 @@
+
+<!-- Dichiara il tipo di documento (HTML5) -->
+<!DOCTYPE html>
+
+<!-- Elemento radice della pagina HTML -->
+<html>
+
+<!-- Contiene i metadati e le impostazioni della pagina -->
+<head>
+
+  <!-- Imposta la codifica dei caratteri a UTF-8 -->
+  <meta charset="UTF-8" />
+  
+  <!-- Imposta la viewport per il responsive design sui dispositivi mobili -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Il titolo della pagina che viene mostrato nella scheda del browser -->
+  <title> Glaucoperfumes </title>
+  
+  <!-- Collegamento al file CSS esterno per lo stile della pagina -->
+  <link href="style.css" rel="stylesheet" type="text/css">
+
+  <!-- Favicon generato su https://favicon.io/favicon-generator/ -->
+  <!--<link rel="icon" href="img/favicon.ico" type="image/x-icon"> -->
+  <!--<link rel="apple-touch-icon" href="favicon-fp.ico"> -->
+
+</head>
+
+<!-- Corpo della pagina -->
+<body>
+
+
+    <!-- Barra di navigazione principale -->
+    <nav class="navbar">
+
+
+        <!-- Contenitore flessibile che racchiude tutti gli elementi della navbar -->
+        <div class="navbar-container">
+            
+
+            <!-- Pulsante hamburger visibile in modalità mobile per aprire o chiudere il menu -->
+            <button class="hamburger" id="hamburger"><span></span></button>
+            
+
+            <!-- Logo cliccabile posizionato al centro -->
+            <a href="#" class="navbar-logo" id="navbar-logo">
+                <img src="img/logo.png" alt="Glaucoperfumes Logo" class="logo-img">
+            </a>
+
+
+            <!-- Elenco dei link di navigazione  -->
+            <ul class="navbar-links" id="navbar-links">
+                <li><a href="#" class="nav-item" data-key="shop"> Shop </a></li>
+                <li><a href="#" class="nav-item" data-key="about"> About </a></li>
+                <li><a href="#" class="nav-item" data-key="stories"> Fairphone Stories </a></li>
+                <li><a href="#" class="nav-item" data-key="club"> Keep Club </a></li>
+                <li><a href="#" class="nav-item" data-key="business"> Business </a></li>
+                <li><a href="#" class="nav-item" data-key="support"> Support </a></li>
+            </ul>
+            
+
+            <!-- Sezione con le icone utente, carrello e selettore lingua -->
+            <div class="navbar-icons">
+                <span></span> <!-- Aggiunge uno spazio visivo tra il logo e l'icona user -->
+                <img src="img/user.svg" alt="User" class="icon-img">
+                <!-- <img src="img/cart.svg" alt="Cart" class="icon-img"> -->
+                <select id="language-switcher" class="language-select">
+                    <option value="it"> 🇮🇹 IT </option>
+                    <option value="en"> 🇬🇧 EN </option>
+                </select>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Intestazione della pagina -->
+    <header>
+        <h1 class="intro-text"> 
+            Sauvage Eau de Parfum - Dior 
+        </h1>       
+    </header>
+
+
+
+  
+
+    <!-- Contenitore della barra di ricerca e del pulsante -->
+    <div class="search-bar">
+
+        <form action="#" method="GET">
+            <input type="text" name="q" placeholder="Cerca un profumo...">
+        </form> 
+
+    </div>
+
+
+    <!-- Sezione principale del contenuto -->
+    <main>
+        
+        
+        <div class="video-container">
+
+            <iframe width="480" height="450" 
+                src="https://www.youtube.com/embed/OY4AlDpXSz0" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+
+    </main>
+    
+
+
+    <!-- Piè di pagina con informazioni di copyright -->
+    <footer>
+        &copy; 2025 Glaucoperfumes 
+    </footer>
+
+    
+
+    <!-- Inclusione degli script -->
+    <script src="navbar.js"></script>
+    
+</body>
+
+</html>

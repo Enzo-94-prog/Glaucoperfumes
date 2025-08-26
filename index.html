@@ -17,8 +17,10 @@
   <!-- Il titolo della pagina che viene mostrato nella scheda del browser -->
   <title> Glaucoperfumes </title>
   
-  <!-- Collegamento al file CSS esterno per lo stile della pagina -->
-  <link href="./css/style.css" rel="stylesheet" type="text/css">
+  <!-- Collegamento al file CSS esterno per lo stile della pagina 
+   ./css/... → significa “parti dalla cartella dove si trova index.html e vai in css/style.css”.
+               (percorso relativo)-->
+  <link href="css/style.css" rel="stylesheet" type="text/css">
 
   <!-- Favicon generato su https://favicon.io/favicon-generator/ -->
   <!--<link rel="icon" href="img/favicon.ico" type="image/x-icon"> -->
@@ -72,8 +74,6 @@
     </header>
 
     
-
-
     <!-- Sezione principale del contenuto -->
     <main>
 
@@ -83,17 +83,27 @@
     </main>
     
 
-
     <!-- Piè di pagina con informazioni di copyright -->
     <footer>
         &copy; 2025 Glaucoperfumes
     </footer>
 
     
-
     <!-- Inclusione degli script -->
     <script src="js/navbar.js"></script>
     <script src="js/script_data.js"></script>
+
+    <!-- 
+                                   - Regola generale -
+
+    /percorso/file = percorso assoluto a partire dalla root del dominio.
+
+    ./percorso/file (o semplicemente percorso/file) = percorso relativo rispetto alla 
+                                                      cartella dell’index.html.
+
+    Nel mio caso devo sempre usare percorsi relativi (./js/..., ./css/..., ./img/...), 
+    perché il sito è ospitato in una subdirectory del dominio.
+    -->
     
 </body>
 

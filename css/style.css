@@ -87,7 +87,7 @@
     height: 3rem;            /* Altezza ottimale (≈ 40px) adattabile con unità relative */
     width: auto;             /* Mantiene le proporzioni dell'immagine */
     transform: scale(3);   /* Ingrandisce visivamente */
-    transform-origin: left center;  /* Punto di origine dell’ingrandimento */
+    max-height: 100%;          /* non sfora mai dal container */
     display: block;          /* Elimina spazi indesiderati */
     object-fit: contain;     /* Mantiene l'integrità del logo */
 }

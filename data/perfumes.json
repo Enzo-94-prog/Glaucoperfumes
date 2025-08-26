@@ -17,7 +17,7 @@
     "category": "Eau de Parfum",
     "notes": "Note marine, bergamotto, incenso",
     "price": "€95,00",
-    "image": "img/acquadigio.jpg",
+    "image": "img/acquadigio.png",
     "description": "Elegante e intenso, un’icona della profumeria maschile."
   },
   {
@@ -27,7 +27,7 @@
     "category": "Eau de Cologne",
     "notes": "Agrumi italiani, lavanda, rosa, vetiver",
     "price": "€110,00",
-    "image": "img/acquadiparma.jpg",
+    "image": "img/acquadiparma.png",
     "description": "Un profumo raffinato con un tocco classico e luminoso."
   },
   {

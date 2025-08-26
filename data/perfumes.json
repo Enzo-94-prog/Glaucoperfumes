@@ -37,7 +37,7 @@
     "category": "Eau de Parfum",
     "notes": "Spezie, legni, vaniglia",
     "price": "€89,00",
-    "image": "img/ambassadorintense.jpg",
+    "image": "img/ambassadorintense.png",
     "description": "Moderno e avvolgente, perfetto per serate speciali."
   },
   {
@@ -47,7 +47,7 @@
     "category": "Eau de Parfum",
     "notes": "Ambra, oud, vaniglia dolce",
     "price": "€75,00",
-    "image": "img/amberoudgold.jpg",
+    "image": "img/amberoudgold.png",
     "description": "Un mix opulento e sensuale, ricco di personalità."
   },
   {
@@ -57,7 +57,7 @@
     "category": "Eau de Parfum",
     "notes": "Ambra, legni caldi, note balsamiche",
     "price": "€49,00",
-    "image": "img/ambraliquida.jpg",
+    "image": "img/ambraliquida.png",
     "description": "Una fragranza avvolgente e rassicurante."
   },
   {
@@ -77,7 +77,7 @@
     "category": "Eau de Parfum",
     "notes": "Note marine, muschio, agrumi",
     "price": "€25,00",
-    "image": "img/bluesand.jpg",
+    "image": "img/bluesand.png",
     "description": "Economico ma sorprendente, fresco e dinamico."
   },
   {
@@ -87,7 +87,7 @@
     "category": "Eau de Parfum",
     "notes": "Pelle, agrumi, muschio",
     "price": "€35,00",
-    "image": "img/bogossvibrantleather.jpg",
+    "image": "img/bogossvibrantleather.png",
     "description": "Un mix moderno e giovanile con carattere deciso."
   },
   {
@@ -97,7 +97,7 @@
     "category": "Eau de Toilette",
     "notes": "Spezie, legni, note orientali",
     "price": "€19,90",
-    "image": "img/bondagehommes.jpg",
+    "image": "img/bondagehommes.png",
     "description": "Fragranza economica con sorprendente intensità."
   },
   {
@@ -107,7 +107,7 @@
     "category": "Eau de Parfum",
     "notes": "Vaniglia, lavanda, ambra",
     "price": "€59,00",
-    "image": "img/detournoir.jpg",
+    "image": "img/detournoir.png",
     "description": "Caldo e seducente, perfetto per l’inverno."
   },
   {
@@ -117,7 +117,7 @@
     "category": "Eau de Toilette",
     "notes": "Iris, cuoio, vetiver",
     "price": "€89,00",
-    "image": "img/diorhomme.jpg",
+    "image": "img/diorhomme.png",
     "description": "Eleganza moderna con un tocco floreale maschile."
   },
   {
@@ -127,7 +127,7 @@
     "category": "Eau de Toilette",
     "notes": "Legni, agrumi, muschio",
     "price": "€55,00",
-    "image": "img/2wood.jpg",
+    "image": "img/2wood.png",
     "description": "Giovanile e dinamico, ideale per tutti i giorni."
   },
   {
@@ -137,7 +137,7 @@
     "category": "Eau de Parfum",
     "notes": "Bergamotto, vetiver, patchouli",
     "price": "€75,00",
-    "image": "img/explorer.jpg",
+    "image": "img/explorer.png",
     "description": "Un profumo avventuroso e deciso."
   },
   {
@@ -147,7 +147,7 @@
     "category": "Acqua Profumata",
     "notes": "Fiori delicati, agrumi, muschio bianco",
     "price": "€29,90",
-    "image": "img/profumodeipiccoli.jpg",
+    "image": "img/profumodeipiccoli.png",
     "description": "Una fragranza delicata pensata per i più piccoli."
   },
   {
@@ -157,7 +157,7 @@
     "category": "Eau de Parfum",
     "notes": "Note fruttate, cacao, legni ambrati",
     "price": "€65,00",
-    "image": "img/impactintense.jpg",
+    "image": "img/impactintense.png",
     "description": "Energetico e moderno, pensato per giovani dinamici."
   },
   {
@@ -167,7 +167,7 @@
     "category": "Eau de Toilette",
     "notes": "Note marine, pepe, patchouli",
     "price": "€72,00",
-    "image": "img/jimmychooman.jpg",
+    "image": "img/jimmychooman.png",
     "description": "Fresco e vivace, perfetto per l’estate."
   },
   {
@@ -177,7 +177,7 @@
     "category": "Eau de Parfum",
     "notes": "Caffè, spezie, vaniglia",
     "price": "€49,90",
-    "image": "img/khamrahqahwa.jpg",
+    "image": "img/khamrahqahwa.png",
     "description": "Caldo e gourmand, ideale nelle stagioni fredde."
   },
   {
@@ -187,7 +187,7 @@
     "category": "Eau de Parfum",
     "notes": "Mandorla, cuoio, vaniglia",
     "price": "€95,00",
-    "image": "img/lhommeideal.jpg",
+    "image": "img/lhommeideal.png",
     "description": "Raffinato e sensuale, un classico maschile moderno."
   },
   {
@@ -197,7 +197,7 @@
     "category": "Eau de Toilette",
     "notes": "Agrumi, spezie, legni",
     "price": "€65,00",
-    "image": "img/lacostehomme.jpg",
+    "image": "img/lacostehomme.png",
     "description": "Sportivo ed elegante, versatile per ogni occasione."
   },
   {
@@ -207,7 +207,7 @@
     "category": "Eau de Parfum",
     "notes": "Note speziate, legni orientali, ambra",
     "price": "€55,00",
-    "image": "img/maahirlegacy.jpg",
+    "image": "img/maahirlegacy.png",
     "description": "Orientale e intenso, con grande persistenza."
   },
   {
@@ -217,7 +217,7 @@
     "category": "Eau de Toilette",
     "notes": "Ambroxan puro",
     "price": "€99,00",
-    "image": "img/molecule02.jpg",
+    "image": "img/molecule02.png",
     "description": "Minimalista e unico, basato su una sola molecola."
   },
   {
@@ -227,7 +227,7 @@
     "category": "Eau de Parfum",
     "notes": "Agrumi, note marine, legni aromatici",
     "price": "€120,00",
-    "image": "img/osaito.jpg",
+    "image": "img/osaito.png",
     "description": "Eleganza mediterranea con spirito raffinato."
   },
   {
@@ -237,7 +237,7 @@
     "category": "Eau de Toilette",
     "notes": "Iris, ambra, patchouli",
     "price": "€89,00",
-    "image": "img/pradalhomme.jpg",
+    "image": "img/pradalhomme.png",
     "description": "Sofisticato e moderno, con un cuore floreale maschile."
   },
   {
@@ -247,7 +247,7 @@
     "category": "Eau de Parfum",
     "notes": "Muschio bianco, fiori puliti",
     "price": "€45,00",
-    "image": "img/puremusk.jpg",
+    "image": "img/puremusk.png",
     "description": "Semplice e pulito, ideale per chi ama fragranze leggere."
   },
   {
@@ -257,7 +257,7 @@
     "category": "Eau de Parfum",
     "notes": "Bergamotto, ambroxan, vaniglia",
     "price": "€99,00",
-    "image": "img/sauvage.jpg",
+    "image": "img/sauvage.png",
     "description": "Potente e iconico, una fragranza che non passa inosservata."
   }
 ]

@@ -14,18 +14,10 @@
 }
 
 
-/* Stile principale della barra di navigazione (navbar):
-   - Layout a flexbox per distribuire gli elementi con spazio tra di loro
-   - Allineamento verticale centrato
-   - Padding interno di 1 rem
-   - Permette il wrapping degli elementi se necessario (flex-wrap: wrap)
-   - Posizione sticky per mantenere la navbar visibile in cima alla pagina durante lo scroll
-   - Sfondo trasparente con effetto di sfocatura (blur) di 25px dietro la navbar
-   - Transizioni fluide di colore di sfondo e filtro sfocatura in 0.3 secondi
-   - Z-index alto per assicurare che la navbar sia sopra altri elementi */
+/* Stile principale della barra di navigazione (navbar): */
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;    /* centro contenitore */
     align-items: center;
     padding: 1rem;
     flex-wrap: nowrap;
@@ -55,11 +47,10 @@
 /* Contenitore interno della navbar */
 .navbar-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    flex-wrap: nowrap;
+    justify-content: space-between; /* distribuisce hamburger e icone:
+                                       hamburger a sinistra, logo al centro, icone a destra */
     width: 100%;
-    position: relative;
 }
 
 
@@ -84,9 +75,10 @@
 /* Stile per il logo nella navbar */
 .navbar-logo {
     display: flex;                 /* Permette il corretto allineamento dell'immagine */
+    flex: 1;                       /* Prende spazio al centro */
     align-items: center;          /* Centra verticalmente il logo */
+    justify-content: center;       /* centro assoluto */
     text-decoration: none;        /* Nessuna sottolineatura se è un link */
-    margin-right: auto; 
 }
 
 
@@ -94,7 +86,7 @@
 .logo-img {
     height: 3rem;            /* Altezza ottimale (≈ 40px) adattabile con unità relative */
     width: auto;             /* Mantiene le proporzioni dell'immagine */
-    transform: scale(2.8);   /* Ingrandisce visivamente */
+    transform: scale(3);   /* Ingrandisce visivamente */
     transform-origin: left center;  /* Punto di origine dell’ingrandimento */
     display: block;          /* Elimina spazi indesiderati */
     object-fit: contain;     /* Mantiene l'integrità del logo */

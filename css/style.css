@@ -4,9 +4,9 @@
 /* Variabili globali per colori principali */
 :root {
     --main-green: rgb(91, 159, 57);
-    --backgroundBody: rgb(0, 128, 45); /* per debugging */
-    --backgroundHeader: rgb(0, 204, 255); /* per debugging */
-    --backgroundMain: rgb(0, 145, 255); /* per debugging */
+   /* per --backgroundBody: rgb(0, 128, 45);  debugging */
+   /* per --backgroundHeader: rgb(0, 204, 255);  debugging */
+   /* per --backgroundMain: rgb(0, 145, 255);  debugging */
     --background: #f5f9f6;
     --text: #333;
     --white: #fff;
@@ -325,7 +325,7 @@ footer {
 
 /* Card del profumo */
 .perfume-card {
-    background-color: var(--white);
+    background-color: var(--background);
     border-left: 6px solid var(--main-green);
     padding: 1.2rem;
     border-radius: 8px;
@@ -347,7 +347,7 @@ footer {
 .perfume-image {
     width: 180px;           /* larghezza fissa */
     height: 250px;          /* altezza fissa */
-    object-fit: contain;    /* ridimensiona mantenendo proporzioni e visibile interamente */
+    object-fit: contain;    /* ridimensiona mantenendo le proporzioni*/
     border-radius: 5px;
     margin-bottom: 1rem;
 }

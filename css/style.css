@@ -41,7 +41,6 @@
 
 
 
-
 /* PARTE 2 – Struttura della navbar e hamburger */
 
 /* Contenitore interno della navbar */
@@ -151,7 +150,6 @@
 
 
 
-
 /* PARTE 3 – Link, icone, lingua */
 
 /* Lista link */
@@ -236,7 +234,6 @@
 
 
 
-
 /* PARTE 4 – Barra di ricerca */
 
 /* Contenitore centrato della search-bar */
@@ -296,6 +293,15 @@ main {
     background-color: var(--backgroundMain); /* per debugging */
 }
 
+
+/* Footer sempre in basso e centrato */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f5f5f5; /* colore sfondo chiaro */
+    font-size: 0.9rem;
+    color: #333;
+}
 
 /* video container */
 .video-container {

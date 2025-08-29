@@ -343,11 +343,21 @@ footer {
 
 /* ---------------------------------------------------------- */
 
-
-/* video conteiner*/
+/* Embeddeb Video */
 .video-container {
-    display: flex;           /* usa flexbox per centrare */
-    justify-content: center; /* centratura orizzontale */
-    max-width: 100%;
-    height: auto;
+    position: relative;
+    width: 100%;
+    max-width: 640px;   /* larghezza massima desktop */
+    margin: 0 auto;
+    padding-top: 56.25%; /* 16:9 ratio */
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
 }

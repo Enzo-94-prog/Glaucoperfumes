@@ -33,6 +33,7 @@ if (document.getElementById("perfume-card")) {
   loadPerfumes().then(perfumes => {
     const perfume = perfumes.find(p => p.id === perfumeId);
     const container = document.getElementById("perfume-card");
+    const videoContainer = document.querySelector(".video-container"); // seleziona il contenitore del video
 
     if (perfume) {
       container.innerHTML = `
@@ -45,16 +46,19 @@ if (document.getElementById("perfume-card")) {
           <p><strong>Prezzo:</strong> ${perfume.price}</p>
           <p>${perfume.description}</p>
         </div>
-
-        <div class="video_container" align="center">
-          <iframe width="480" height="450" 
-              src="${perfume.video_review}"
-              title="incorporated video" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen>
-          </iframe>
       `;
+
+      // Creo dinamicamente l'iframe del video nel contenitore responsivo
+      if (videoContainer) {
+        const iframe = document.createElement("iframe");
+        iframe.src = perfume.video_review;
+        iframe.title = "Video recensione";
+        iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+        iframe.allowFullscreen = true;
+        // Larghezza e altezza verranno gestite dal CSS responsive
+        videoContainer.appendChild(iframe);
+      }
+
     } else {
       container.innerHTML = "<p>Profumo non trovato.</p>";
     }

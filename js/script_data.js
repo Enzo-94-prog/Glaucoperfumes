@@ -22,18 +22,21 @@ if (document.getElementById("perfume-list")) {
   });
 }
 
+
+/* --------------------------------------------------------------------- */
+
 // Se siamo in perfume.html → mostra dettagli profumo
-if (document.getElementById("perfume-details")) {
+if (document.getElementById("perfume-card")) {
   const params = new URLSearchParams(window.location.search);
   const perfumeId = parseInt(params.get("id"));
 
   loadPerfumes().then(perfumes => {
     const perfume = perfumes.find(p => p.id === perfumeId);
-    const container = document.getElementById("perfume-details");
+    const container = document.getElementById("perfume-card");
 
     if (perfume) {
       container.innerHTML = `
-        <div class="perfume-details">
+        <div class="perfume-card">
           <h1>${perfume.name}</h1>
           <img src="${perfume.image}" alt="${perfume.name}">
           <p><strong>Marca:</strong> ${perfume.brand}</p>
@@ -42,6 +45,15 @@ if (document.getElementById("perfume-details")) {
           <p><strong>Prezzo:</strong> ${perfume.price}</p>
           <p>${perfume.description}</p>
         </div>
+
+        <div class="video_container" align="center">
+          <iframe width="480" height="450" 
+              src="${perfume.video_review}"
+              title="incorporated video" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+          </iframe>
       `;
     } else {
       container.innerHTML = "<p>Profumo non trovato.</p>";

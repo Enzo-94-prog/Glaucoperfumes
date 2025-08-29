@@ -9,11 +9,11 @@
     --white: #fff;
     --gray: #ccc;
     
-      /* per debugging */
+      /* per debugging 
     --backgroundIconNavbar: var(--white);
     --backgroundBody: rgb(0, 128, 45);      
     --backgroundHeader: rgb(0, 204, 255); 
-    --backgroundMain: rgb(0, 145, 255);        
+    --backgroundMain: rgb(0, 145, 255);   */     
 }
 
 /* Stile principale della barra di navigazione (navbar): */
@@ -278,33 +278,51 @@ footer {
 }
 
 
+/* ---------------------------------------------------------- */
+
+
 /* Card del profumo */
 .perfume-card {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 6px solid var(--main-green); 
     background-color: var(--background);
-    border-left: 6px solid var(--main-green);
-    padding: 1.2rem;
-    border-radius: 8px;
-    transition: box-shadow 0.3s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+}
+
+.perfume-card img {
     width: 100%;
-    box-sizing: border-box;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
-.perfume-card:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.perfume-card h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
+.perfume-card p,
+.perfume-card li {
+    text-align: center;
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+}
 
 /* Immagine preview del profumo */
 .perfume-image {
-    width: 180px;           /* larghezza fissa */
-    height: 250px;          /* altezza fissa */
-    object-fit: contain;    /* ridimensiona mantenendo le proporzioni*/
+    width: 100%;
+    max-width: 180px;       /* massima larghezza per coerenza */
+    height: auto;           /* altezza automatica per mantenere proporzioni */
+    object-fit: contain;    /* mantiene proporzioni */
     border-radius: 5px;
     margin-bottom: 1rem;
+    display: block;
 }
 
 
@@ -323,41 +341,10 @@ footer {
     margin-bottom: 1rem;
 }
 
-/* Dettagli del singolo profumo */
-.perfume-details {
-    max-width: 800px;
-    margin: 2rem auto;
-    background-color: var(--white);
-    padding: 2rem;
-    border-radius: 10px;
-    border-left: 6px solid var(--main-green);
-}
-
-.perfume-details img {
-    width: 100%;
-    max-height: 400px;
-    object-fit: contain;
-    border-radius: 6px;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.perfume-details h1 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.perfume-details p,
-.perfume-details li {
-    text-align: center;
-    font-size: 1rem;
-    color: #444;
-    line-height: 1.6;
-}
+/* ---------------------------------------------------------- */
 
 
-/* video container */
+/* video conteiner*/
 .video-container {
     display: flex;           /* usa flexbox per centrare */
     justify-content: center; /* centratura orizzontale */

@@ -9,11 +9,11 @@
     --white: #fff;
     --gray: #ccc;
     
-      /* per debugging */
+      /* per debugging 
     --backgroundIconNavbar: var(--white);
     --backgroundBody: rgb(0, 128, 45);      
     --backgroundHeader: rgb(0, 204, 255); 
-    --backgroundMain: rgb(0, 145, 255);        
+    --backgroundMain: rgb(0, 145, 255);  */      
 }
 
 

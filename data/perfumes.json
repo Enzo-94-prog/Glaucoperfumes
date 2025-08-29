@@ -8,7 +8,8 @@
     "notes": "Agrumi freschi, lavanda, erbe aromatiche",
     "price": "€39,90",
     "image": "img/4711.png",
-    "description": "Un classico intramontabile, fresco e vivace."
+    "description": "Un classico intramontabile, fresco e vivace.",
+    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQT1eQY8mA-aQrzzkJYEFQ9kASDKCj5_IPUoqFXFz-NDPr0?width=1080&height=1920"
   },
   {
     "id": 2,
@@ -18,7 +19,8 @@
     "notes": "Note marine, bergamotto, incenso",
     "price": "€95,00",
     "image": "img/acquadigio.png",
-    "description": "Elegante e intenso, un’icona della profumeria maschile."
+    "description": "Elegante e intenso, un’icona della profumeria maschile.",
+    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQTS1T5Ch8xjQouCPdpGYst2AdGHAqMWSh2zbhzPFQmI2NY?width=1080&height=1920"
   },
   {
     "id": 3,
@@ -28,7 +30,8 @@
     "notes": "Agrumi italiani, lavanda, rosa, vetiver",
     "price": "€110,00",
     "image": "img/acquadiparma.png",
-    "description": "Un profumo raffinato con un tocco classico e luminoso."
+    "description": "Un profumo raffinato con un tocco classico e luminoso.",
+    "video_review": "https://example.com/video_review/3"
   },
   {
     "id": 4,
@@ -38,7 +41,8 @@
     "notes": "Spezie, legni, vaniglia",
     "price": "€89,00",
     "image": "img/ambassadorintense.png",
-    "description": "Moderno e avvolgente, perfetto per serate speciali."
+    "description": "Moderno e avvolgente, perfetto per serate speciali.",
+    "video_review": "https://example.com/video_review/4"
   },
   {
     "id": 5,
@@ -48,7 +52,8 @@
     "notes": "Ambra, oud, vaniglia dolce",
     "price": "€75,00",
     "image": "img/amberoudgold.png",
-    "description": "Un mix opulento e sensuale, ricco di personalità."
+    "description": "Un mix opulento e sensuale, ricco di personalità.",
+    "video_review": "https://example.com/video_review/5"
   },
   {
     "id": 6,
@@ -58,7 +63,8 @@
     "notes": "Ambra, legni caldi, note balsamiche",
     "price": "€49,00",
     "image": "img/ambraliquida.png",
-    "description": "Una fragranza avvolgente e rassicurante."
+    "description": "Una fragranza avvolgente e rassicurante.",
+    "video_review": "https://example.com/video_review/6"
   },
   {
     "id": 7,
@@ -68,7 +74,8 @@
     "notes": "Agrumi, erbe aromatiche, legni chiari",
     "price": "€69,90",
     "image": "img/artisanpure.png",
-    "description": "Fresco e naturale, ispirato a paesaggi luminosi."
+    "description": "Fresco e naturale, ispirato a paesaggi luminosi.",
+    "video_review": "https://example.com/video_review/7"
   },
   {
     "id": 8,
@@ -78,7 +85,8 @@
     "notes": "Note marine, muschio, agrumi",
     "price": "€25,00",
     "image": "img/bluesand.png",
-    "description": "Economico ma sorprendente, fresco e dinamico."
+    "description": "Economico ma sorprendente, fresco e dinamico.",
+    "video_review": "https://example.com/video_review/8"
   },
   {
     "id": 9,
@@ -88,7 +96,8 @@
     "notes": "Pelle, agrumi, muschio",
     "price": "€35,00",
     "image": "img/bogossvibrantleather.png",
-    "description": "Un mix moderno e giovanile con carattere deciso."
+    "description": "Un mix moderno e giovanile con carattere deciso.",
+    "video_review": "https://example.com/video_review/9"
   },
   {
     "id": 10,
@@ -98,7 +107,8 @@
     "notes": "Spezie, legni, note orientali",
     "price": "€19,90",
     "image": "img/bondagehommes.png",
-    "description": "Fragranza economica con sorprendente intensità."
+    "description": "Fragranza economica con sorprendente intensità.",
+    "video_review": "https://example.com/video_review/10"
   },
   {
     "id": 11,
@@ -108,7 +118,8 @@
     "notes": "Vaniglia, lavanda, ambra",
     "price": "€59,00",
     "image": "img/detournoir.png",
-    "description": "Caldo e seducente, perfetto per l’inverno."
+    "description": "Caldo e seducente, perfetto per l’inverno.",
+    "video_review": "https://example.com/video_review/11"
   },
   {
     "id": 12,
@@ -118,7 +129,8 @@
     "notes": "Iris, cuoio, vetiver",
     "price": "€89,00",
     "image": "img/diorhomme.png",
-    "description": "Eleganza moderna con un tocco floreale maschile."
+    "description": "Eleganza moderna con un tocco floreale maschile.",
+    "video_review": "https://example.com/video_review/12"
   },
   {
     "id": 13,
@@ -128,7 +140,8 @@
     "notes": "Legni, agrumi, muschio",
     "price": "€55,00",
     "image": "img/2wood.png",
-    "description": "Giovanile e dinamico, ideale per tutti i giorni."
+    "description": "Giovanile e dinamico, ideale per tutti i giorni.",
+    "video_review": "https://example.com/video_review/13"
   },
   {
     "id": 14,
@@ -138,7 +151,8 @@
     "notes": "Bergamotto, vetiver, patchouli",
     "price": "€75,00",
     "image": "img/explorer.png",
-    "description": "Un profumo avventuroso e deciso."
+    "description": "Un profumo avventuroso e deciso.",
+    "video_review": "https://example.com/video_review/14"
   },
   {
     "id": 15,
@@ -148,7 +162,8 @@
     "notes": "Fiori delicati, agrumi, muschio bianco",
     "price": "€29,90",
     "image": "img/profumodeipiccoli.png",
-    "description": "Una fragranza delicata pensata per i più piccoli."
+    "description": "Una fragranza delicata pensata per i più piccoli.",
+    "video_review": "https://example.com/video_review/15"
   },
   {
     "id": 16,
@@ -158,7 +173,8 @@
     "notes": "Note fruttate, cacao, legni ambrati",
     "price": "€65,00",
     "image": "img/impactintense.png",
-    "description": "Energetico e moderno, pensato per giovani dinamici."
+    "description": "Energetico e moderno, pensato per giovani dinamici.",
+    "video_review": "https://example.com/video_review/16"
   },
   {
     "id": 17,
@@ -168,7 +184,8 @@
     "notes": "Note marine, pepe, patchouli",
     "price": "€72,00",
     "image": "img/jimmychooman.png",
-    "description": "Fresco e vivace, perfetto per l’estate."
+    "description": "Fresco e vivace, perfetto per l’estate.",
+    "video_review": "https://example.com/video_review/17"
   },
   {
     "id": 18,
@@ -178,7 +195,8 @@
     "notes": "Caffè, spezie, vaniglia",
     "price": "€49,90",
     "image": "img/khamrahqahwa.png",
-    "description": "Caldo e gourmand, ideale nelle stagioni fredde."
+    "description": "Caldo e gourmand, ideale nelle stagioni fredde.",
+    "video_review": "https://example.com/video_review/18"
   },
   {
     "id": 19,
@@ -188,7 +206,8 @@
     "notes": "Mandorla, cuoio, vaniglia",
     "price": "€95,00",
     "image": "img/lhommeideal.png",
-    "description": "Raffinato e sensuale, un classico maschile moderno."
+    "description": "Raffinato e sensuale, un classico maschile moderno.",
+    "video_review": "https://example.com/video_review/19"
   },
   {
     "id": 20,
@@ -198,7 +217,8 @@
     "notes": "Agrumi, spezie, legni",
     "price": "€65,00",
     "image": "img/lacostehomme.png",
-    "description": "Sportivo ed elegante, versatile per ogni occasione."
+    "description": "Sportivo ed elegante, versatile per ogni occasione.",
+    "video_review": "https://example.com/video_review/20"
   },
   {
     "id": 21,
@@ -208,7 +228,8 @@
     "notes": "Note speziate, legni orientali, ambra",
     "price": "€55,00",
     "image": "img/maahirlegacy.png",
-    "description": "Orientale e intenso, con grande persistenza."
+    "description": "Orientale e intenso, con grande persistenza.",
+    "video_review": "https://example.com/video_review/21"
   },
   {
     "id": 22,
@@ -218,7 +239,8 @@
     "notes": "Ambroxan puro",
     "price": "€99,00",
     "image": "img/molecule02.png",
-    "description": "Minimalista e unico, basato su una sola molecola."
+    "description": "Minimalista e unico, basato su una sola molecola.",
+    "video_review": "https://example.com/video_review/22"
   },
   {
     "id": 23,
@@ -228,7 +250,8 @@
     "notes": "Agrumi, note marine, legni aromatici",
     "price": "€120,00",
     "image": "img/osaito.png",
-    "description": "Eleganza mediterranea con spirito raffinato."
+    "description": "Eleganza mediterranea con spirito raffinato.",
+    "video_review": "https://example.com/video_review/23"
   },
   {
     "id": 24,
@@ -238,7 +261,8 @@
     "notes": "Iris, ambra, patchouli",
     "price": "€89,00",
     "image": "img/pradalhomme.png",
-    "description": "Sofisticato e moderno, con un cuore floreale maschile."
+    "description": "Sofisticato e moderno, con un cuore floreale maschile.",
+    "video_review": "https://example.com/video_review/24"
   },
   {
     "id": 25,
@@ -248,7 +272,8 @@
     "notes": "Muschio bianco, fiori puliti",
     "price": "€45,00",
     "image": "img/puremusk.png",
-    "description": "Semplice e pulito, ideale per chi ama fragranze leggere."
+    "description": "Semplice e pulito, ideale per chi ama fragranze leggere.",
+    "video_review": "https://example.com/video_review/25"
   },
   {
     "id": 26,
@@ -258,6 +283,7 @@
     "notes": "Bergamotto, ambroxan, vaniglia",
     "price": "€99,00",
     "image": "img/sauvage.png",
-    "description": "Potente e iconico, una fragranza che non passa inosservata."
+    "description": "Potente e iconico, una fragranza che non passa inosservata.",
+    "video_review": "https://example.com/video_review/26"
   }
 ]

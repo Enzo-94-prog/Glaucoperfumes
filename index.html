@@ -33,7 +33,7 @@
 <body>
 
 
-    <!-- Barra di navigazione principale -->
+    <!-- BARRA DI NAVIGAZIONE PRINCIPALE -->
     <nav class="navbar">
 
 
@@ -46,9 +46,13 @@
             
 
             <!-- Logo cliccabile posizionato al centro -->
-            <a href="#" class="navbar-logo" id="navbar-logo">
+            <a href="http://127.0.0.1:5500/" class="navbar-logo" id="navbar-logo">
                 <img src="img/logo.png" alt="Glaucoperfumes Logo" class="logo-img">
             </a>
+
+            <div class="navbar-icons">
+                <a href="user.html"><img src="img/user.svg" alt="user" class="icon-img"></a>
+            </div>
 
 
             <!-- Elenco dei link di navigazione  -->
@@ -74,9 +78,18 @@
         </h1>       
     </header>
 
+
     
     <!-- Sezione principale del contenuto -->
     <main>
+
+                <!-- Barra di ricerca -->
+        <div class="search-bar">
+            <form action="#" method="get">
+                <input type="text" name="q" placeholder="Cerca un profumo...">
+            </form>
+        </div>
+
 
         <!-- Contenitore vuoto in cui verranno inseriti dinamicamente i profumi tramite JavaScript -->
         <div class="perfume-list" id="perfume-list"></div>

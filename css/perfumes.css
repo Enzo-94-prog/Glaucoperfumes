@@ -16,7 +16,6 @@
     --backgroundMain: rgb(0, 145, 255);        
 }
 
-
 /* Stile principale della barra di navigazione (navbar): */
 .navbar {
     display: flex;
@@ -222,7 +221,7 @@
     justify-content: center;
     object-fit: contain;     /* riduce l’effetto del padding interno */
     vertical-align: middle;  /* centratura rispetto al testo/linea */
-
+    
     cursor: pointer;
     transition: opacity 0.2s;
 }
@@ -230,32 +229,6 @@
 .icon-img:hover {
     opacity: 0.7;
 }
-
-
-
-/* PARTE 4 – Barra di ricerca */
-
-/* Contenitore centrato della search-bar */
-.search-bar {
-  width: 90vw;                    /* Occupa fino al 90% della viewport */
-  max-width: 300px;               /* Non supera i 300px */
-  margin: 0.5em auto;             /* Centro orizzontale con margine verticale */
-  padding: 0em;                   /* Padding verticale */
-  box-sizing: border-box;
-}
-
-/* Campo di input */
-.search-bar input[type="text"] {
-  width: 100%;                   /* Occupa tutta la larghezza del contenitore */
-  padding: 0.75em 1em;
-  font-size: 1em;
-  border: 1px solid #ccc;
-  border-radius: 0.5em;
-  box-sizing: border-box;
-  box-shadow: 0 2px 4px var(--grey);
-  outline-offset: 2px;
-}
-
 
 
 /* PARTE 5 – Stili di base per l'header, il body e il main della pagina */
@@ -305,16 +278,6 @@ footer {
 }
 
 
-
-/* Lista dei profumi */
-.perfume-list {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    margin-top: 1rem;
-}
-
-
 /* Card del profumo */
 .perfume-card {
     background-color: var(--background);
@@ -360,27 +323,6 @@ footer {
     margin-bottom: 1rem;
 }
 
-
-/* Pulsante di dettaglio */
-.details-btn {
-    margin-top: auto;
-    display: inline-block;
-    background-color: var(--main-green);
-    color: var(--white);
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 5px;
-    font-weight: 500;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-.details-btn:hover {
-    background-color: var(--dark-green);
-}
-
-
 /* Dettagli del singolo profumo */
 .perfume-details {
     max-width: 800px;
@@ -394,39 +336,31 @@ footer {
 .perfume-details img {
     width: 100%;
     max-height: 400px;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 6px;
+    margin-top: 1.5rem;
     margin-bottom: 1.5rem;
 }
 
 .perfume-details h1 {
+    text-align: center;
     font-size: 2rem;
     margin-bottom: 1rem;
 }
 
 .perfume-details p,
 .perfume-details li {
+    text-align: center;
     font-size: 1rem;
     color: #444;
     line-height: 1.6;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* video container */
+.video-container {
+    display: flex;           /* usa flexbox per centrare */
+    justify-content: center; /* centratura orizzontale */
+    max-width: 100%;
+    height: auto;
+}

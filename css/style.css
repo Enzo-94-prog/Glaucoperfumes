@@ -88,7 +88,7 @@
 .logo-img {
     height: 3rem;            /* Altezza ottimale (≈ 40px) adattabile con unità relative */
     width: auto;             /* Mantiene le proporzioni dell'immagine */
-    transform: scale(3);     /* Ingrandisce visivamente */
+    transform: scale(3.5);     /* Ingrandisce visivamente */
     max-height: 100%;        /* Non sfora mai dal container */
     display: block;          /* Elimina spazi indesiderati */
     object-fit: contain;     /* Mantiene l'integrità del logo */

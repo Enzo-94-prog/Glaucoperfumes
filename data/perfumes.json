@@ -1,4 +1,3 @@
-
 [
   {
     "id": 1,
@@ -285,5 +284,148 @@
     "image": "img/sauvage.png",
     "description": "Potente e iconico, una fragranza che non passa inosservata.",
     "video_review": "https://example.com/video_review/26"
+  },
+  {
+    "id": 27,
+    "name": "Caprice",
+    "brand": "Al Nashama",
+    "category": "Eau de Parfum",
+    "notes": "Fiori orientali, spezie, legni",
+    "price": "€60,00",
+    "image": "img/caprice.png",
+    "description": "Un profumo elegante dal fascino orientale.",
+    "video_review": "https://example.com/video_review/27"
+  },
+  {
+    "id": 28,
+    "name": "Mandorla",
+    "brand": "L'Erbolario",
+    "category": "Eau de Parfum",
+    "notes": "Mandorla dolce, fiori bianchi, vaniglia",
+    "price": "€49,00",
+    "image": "img/mandorla.png",
+    "description": "Dolce e avvolgente, con note gourmand.",
+    "video_review": "https://example.com/video_review/28"
+  },
+  {
+    "id": 29,
+    "name": "God Bless Cola",
+    "brand": "Versatile Paris",
+    "category": "Eau de Parfum",
+    "notes": "Cola, spezie, agrumi",
+    "price": "€95,00",
+    "image": "img/godblesscola.png",
+    "description": "Frizzante e originale, con un tocco pop.",
+    "video_review": "https://example.com/video_review/29"
+  },
+  {
+    "id": 30,
+    "name": "Dylan Blue",
+    "brand": "Versace",
+    "category": "Eau de Toilette",
+    "notes": "Agrumi, ambroxan, incenso",
+    "price": "€79,00",
+    "image": "img/dylanblue.png",
+    "description": "Moderno e sensuale, uno dei best seller Versace.",
+    "video_review": "https://example.com/video_review/30"
+  },
+  {
+    "id": 31,
+    "name": "DesirToxic",
+    "brand": "M. Micallef",
+    "category": "Eau de Parfum",
+    "notes": "Note speziate, cuoio, legni scuri",
+    "price": "€135,00",
+    "image": "img/desirtoxic.png",
+    "description": "Intenso e misterioso, dal carattere deciso.",
+    "video_review": "https://example.com/video_review/31"
+  },
+  {
+    "id": 32,
+    "name": "Spicebomb Extreme",
+    "brand": "Viktor&Rolf",
+    "category": "Eau de Parfum",
+    "notes": "Tabacco, vaniglia, spezie calde",
+    "price": "€120,00",
+    "image": "img/spicebombextreme.png",
+    "description": "Un’esplosione di spezie e calore.",
+    "video_review": "https://example.com/video_review/32"
+  },
+  {
+    "id": 33,
+    "name": "Ana Abiyedh",
+    "brand": "Lattafa Perfumes",
+    "category": "Eau de Parfum",
+    "notes": "Muschio bianco, legni dolci, note fresche",
+    "price": "€45,00",
+    "image": "img/anaabiyedh.png",
+    "description": "Pulito, muschiato e avvolgente.",
+    "video_review": "https://example.com/video_review/33"
+  },
+  {
+    "id": 34,
+    "name": "Spell Caramel",
+    "brand": "Zara",
+    "category": "Eau de Parfum",
+    "notes": "Caramello, vaniglia, note gourmand",
+    "price": "€29,90",
+    "image": "img/spellcaramel.png",
+    "description": "Dolce e seducente, perfetto per chi ama note zuccherine.",
+    "video_review": "https://example.com/video_review/34"
+  },
+  {
+    "id": 35,
+    "name": "Ejaazi",
+    "brand": "Lattafa Perfumes",
+    "category": "Eau de Parfum",
+    "notes": "Agrumi freschi, note legnose, spezie leggere",
+    "price": "€39,90",
+    "image": "img/ejaazi.png",
+    "description": "Equilibrato e versatile, adatto a ogni occasione.",
+    "video_review": "https://example.com/video_review/35"
+  },
+  {
+    "id": 36,
+    "name": "Tobacco Collection Rich Warm Addictive",
+    "brand": "Zara",
+    "category": "Eau de Toilette",
+    "notes": "Tabacco, miele, cocco",
+    "price": "€29,90",
+    "image": "img/tobaccocollection.png",
+    "description": "Caldo e irresistibile, amatissimo dagli appassionati.",
+    "video_review": "https://example.com/video_review/36"
+  },
+  {
+    "id": 37,
+    "name": "Herod",
+    "brand": "Parfums de Marly",
+    "category": "Eau de Parfum",
+    "notes": "Tabacco, vaniglia, cannella",
+    "price": "€210,00",
+    "image": "img/herod.png",
+    "description": "Iconico tabaccato dolce, elegante e persistente.",
+    "video_review": "https://example.com/video_review/37"
+  },
+  {
+    "id": 38,
+    "name": "Red Tobacco",
+    "brand": "Mancera",
+    "category": "Eau de Parfum",
+    "notes": "Tabacco, spezie forti, legni",
+    "price": "€145,00",
+    "image": "img/redtobacco.png",
+    "description": "Potente e speziato, per veri amanti delle fragranze intense.",
+    "video_review": "https://example.com/video_review/38"
+  },
+  {
+    "id": 39,
+    "name": "Assenzio",
+    "brand": "L'Erbolario",
+    "category": "Eau de Parfum",
+    "notes": "Assenzio, erbe aromatiche, legni verdi",
+    "price": "€49,00",
+    "image": "img/assenzio.png",
+    "description": "Erbaceo e misterioso, con un carattere unico.",
+    "video_review": "https://example.com/video_review/39"
   }
 ]

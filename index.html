@@ -21,6 +21,7 @@
    ./css/... o css/... → significa “parti dalla cartella dove si trova index.html e vai 
                          in css/style.css”. (percorso relativo)-->
   <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/search_bar.css" rel="stylesheet" type="text/css">
   
 
   <!-- Favicon generato su https://favicon.io/favicon-generator/ -->
@@ -85,9 +86,8 @@
 
                 <!-- Barra di ricerca -->
         <div class="search-bar">
-            <form action="#" method="get">
-                <input type="text" name="q" placeholder="Cerca un profumo...(non funziona)">
-            </form>
+            <input type="text" id="searchInput" placeholder="Cerca un profumo...">
+                <div id="searchResults" class="results-container"></div>
         </div>
 
 
@@ -106,7 +106,7 @@
     <!-- Inclusione degli script -->
     <script src="js/script_data.js"></script>
     <script src="js/navbar.js"></script>
-    
+    <script src="js/search_perfume.js"></script>
 
     <!-- 
                                    - Regola generale -

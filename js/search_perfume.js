@@ -1,57 +1,52 @@
 
-// Variabile globale per salvare i profumi caricati
 let perfumes = [];
 
-// Carica i dati dal JSON ma non mostra nulla subito
-async function loadPerfumes() {
+document.addEventListener("DOMContentLoaded", async () => {
+  // Carico i dati dal JSON
   try {
-    const response = await fetch("data/perfumes.json");
+    const response = await fetch("perfumes.json");
     perfumes = await response.json();
   } catch (error) {
-    console.error("Errore nel caricamento del JSON:", error);
-  }
-}
-
-// Funzione per creare e mostrare le card
-function renderPerfumes(list) {
-  const container = document.getElementById("cards-container");
-  container.innerHTML = ""; // pulisce prima
-
-  if (list.length === 0) {
-    container.innerHTML = `<p class="no-results">Nessun profumo trovato</p>`;
+    console.error("Errore nel caricamento del file perfumes.json:", error);
     return;
   }
 
-  list.forEach(perfume => {
-    const card = document.createElement("div");
-    card.classList.add("card");
-    card.innerHTML = `
-      <img src="${perfume.immagine || 'img/default.jpg'}" alt="${perfume.nome}" class="card-img">
-      <h2>${perfume.nome}</h2>
-      <p>${perfume.descrizione}</p>
-    `;
-    container.appendChild(card);
-  });
-}
+  const searchInput = document.getElementById("searchInput");
+  const searchResults = document.getElementById("searchResults");
 
-// Inizializza tutto quando il DOM è pronto
-window.addEventListener("DOMContentLoaded", async () => {
-  await loadPerfumes(); // carico il JSON ma non mostro nulla
+  // Event listener sulla barra di ricerca
+  searchInput.addEventListener("input", () => {
+    const query = searchInput.value.toLowerCase().trim();
+    searchResults.innerHTML = "";
 
-  const searchInput = document.getElementById("search");
-
-  searchInput.addEventListener("input", function () {
-    const query = this.value.toLowerCase().trim();
-
-    if (query === "") {
-      document.getElementById("cards-container").innerHTML = ""; // svuota se non c’è testo
+    if (!query) {
+      searchResults.style.display = "none";
       return;
     }
 
-    const filtered = perfumes.filter(perfume =>
-      perfume.nome.toLowerCase().includes(query)
+    // Filtra i profumi per nome o brand
+    const filtered = perfumes.filter(p =>
+      p.name.toLowerCase().includes(query) ||
+      p.brand.toLowerCase().includes(query)
     );
 
-    renderPerfumes(filtered);
+    if (!filtered.length) {
+      searchResults.style.display = "none";
+      return;
+    }
+
+    searchResults.style.display = "block";
+
+    // Mostra i risultati
+    filtered.forEach(p => {
+      const item = document.createElement("a");
+      item.href = `perfume.html?id=${p.id}`;
+      item.classList.add("result-item");
+      item.innerHTML = `
+        <img src="${p.image}" alt="${p.name}">
+        <span>${p.name}</span>
+      `;
+      searchResults.appendChild(item);
+    });
   });
 });

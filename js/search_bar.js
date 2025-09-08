@@ -39,8 +39,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // Mostra i risultati
     filtered.forEach(p => {
-      const item = document.createElement("a");
-      item.href = `perfume.html?id=${p.id}`;
+      const item = document.createElement("a"); //crea un elemento a(link)
+      item.href = `perfume.html?id=${p.id}`;  // collegamento alla pagina
       item.classList.add("result-item");
       item.innerHTML = `
         <img src="${p.image}" alt="${p.name}">

@@ -8,17 +8,23 @@ async function loadPerfumes() {
 // Se siamo nella index.html → mostra lista profumi
 if (document.getElementById("perfume-list")) {
   loadPerfumes().then(perfumes => {
+
     const container = document.getElementById("perfume-list");
     perfumes.forEach(p => {
       container.innerHTML += `
         <div class="perfume-card">
-          <img src="${p.image}" alt="${p.name}" class="perfume-image">
+
+          <a href="perfume.html?id=${p.id}">
+            <img src="${p.image}" alt="${p.name}" class="perfume-image">
+          </a>
+          
           <h2 class="perfume-title">${p.name}</h2>
           <p class="perfume-meta">${p.brand}</p>
-          <a href="perfume.html?id=${p.id}" class="details-btn">Scopri di più</a>
+    
         </div>
       `;
     });
+
   });
 }
 

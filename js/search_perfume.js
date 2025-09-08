@@ -4,7 +4,7 @@ let perfumes = [];
 document.addEventListener("DOMContentLoaded", async () => {
   // Carico i dati dal JSON
   try {
-    const response = await fetch("perfumes.json");
+    const response = await fetch("data/perfumes.json");
     perfumes = await response.json();
   } catch (error) {
     console.error("Errore nel caricamento del file perfumes.json:", error);

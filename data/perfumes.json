@@ -33,7 +33,7 @@
     "price": "€95,00",
     "image": "img/acquadigio.png",
     "description": "Elegante e intenso, un’icona della profumeria maschile.",
-    "video_review": "video/Acqua di Giò - Profumo.mov"
+    "video_review": "https://www.youtube.com/embed/RDVsz2LTDq0"
   },
   {
     "id": 3,
@@ -51,7 +51,7 @@
     "price": "€110,00",
     "image": "img/acquadiparma.png",
     "description": "Un profumo raffinato con un tocco classico e luminoso.",
-    "video_review": "video/Acqua di Parma Colonia di Acqua di Parma.mov"
+    "video_review": "https://www.youtube.com/embed/noJ4KxJ0OVA"
   },
   {
     "id": 4,

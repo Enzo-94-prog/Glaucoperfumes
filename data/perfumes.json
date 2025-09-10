@@ -5,10 +5,17 @@
     "brand": "4711",
     "category": "Eau de Cologne",
     "notes": "Agrumi freschi, lavanda, erbe aromatiche",
+    "top_notes": "Limone, Bergamotto, Arancia",
+    "middle_notes": "Lavanda, Rosmarino",
+    "base_notes": "Neroli, Petitgrain",
+    "genre": "unisex",
+    "longevity": "scarsa",
+    "projection": "leggera",
+    "season": "Primavera, Estate",
     "price": "€39,90",
     "image": "img/4711.png",
     "description": "Un classico intramontabile, fresco e vivace.",
-    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQT1eQY8mA-aQrzzkJYEFQ9kASDKCj5_IPUoqFXFz-NDPr0?width=1080&height=1920"
+    "video_review": "https://www.youtube.com/embed/ID"
   },
   {
     "id": 2,
@@ -16,10 +23,17 @@
     "brand": "Giorgio Armani",
     "category": "Eau de Parfum",
     "notes": "Note marine, bergamotto, incenso",
+    "top_notes": "Note marine, Bergamotto",
+    "middle_notes": "Rosmarino, Salvia, Geranio",
+    "base_notes": "Incenso, Patchouli",
+    "genre": "maschile",
+    "longevity": "buona",
+    "projection": "moderata",
+    "season": "Primavera, Estate, Autunno",
     "price": "€95,00",
     "image": "img/acquadigio.png",
     "description": "Elegante e intenso, un’icona della profumeria maschile.",
-    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQTS1T5Ch8xjQouCPdpGYst2AdGHAqMWSh2zbhzPFQmI2NY?width=1080&height=1920"
+    "video_review": "video/Acqua di Giò - Profumo.mov"
   },
   {
     "id": 3,
@@ -27,10 +41,17 @@
     "brand": "Acqua di Parma",
     "category": "Eau de Cologne",
     "notes": "Agrumi italiani, lavanda, rosa, vetiver",
+    "top_notes": "Limone, Arancia Dolce, Bergamotto di Calabria",
+    "middle_notes": "Lavanda, Rosa di Bulgaria, Rosmarino",
+    "base_notes": "Vetiver, Sandalo, Patchouli",
+    "genre": "unisex",
+    "longevity": "moderata",
+    "projection": "leggera",
+    "season": "Primavera, Estate",
     "price": "€110,00",
     "image": "img/acquadiparma.png",
     "description": "Un profumo raffinato con un tocco classico e luminoso.",
-    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQTZAbP-SRiZSpywEpTar8SOARkqVsknuVnJR1KkpuX0SVE?width=1080&height=1920"
+    "video_review": "video/Acqua di Parma Colonia di Acqua di Parma.mov"
   },
   {
     "id": 4,
@@ -38,10 +59,17 @@
     "brand": "Gisada",
     "category": "Eau de Parfum",
     "notes": "Spezie, legni, vaniglia",
+    "top_notes": "Bergamotto, Cardamomo del Guatemala, Pompelmo, Incenso, Lavanda, Liquirizia, Mandarino, Noce moscata, Pepe rosa",
+    "middle_notes": "Lampone, Caramello, Fresia, Geranio Egiziano, Gelsomino, Orchidea, Chiodi di garofano, Cannella, Eliotropio",
+    "base_notes": "Fava Tonka, Vaniglia, Cuoio, Patchouli, Ambra grigia, Muschio di quercia, Muschio, Labdano, Legno di Cashmere, Vetiver di Haiti",
+    "genre": "maschile",
+    "longevity": "buona",
+    "projection": "forte",
+    "season": "Autunno, Inverno",
     "price": "€89,00",
     "image": "img/ambassadorintense.png",
     "description": "Moderno e avvolgente, perfetto per serate speciali.",
-    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQR0sep5srtuRphlxVo8nHFYAfFOO56eu9fz8zHN2_Er1MI?width=1080&height=1920"
+    "video_review": "video/Ambassador Intense di Gisada.mov"
   },
   {
     "id": 5,
@@ -49,10 +77,17 @@
     "brand": "Al Haramain",
     "category": "Eau de Parfum",
     "notes": "Ambra, oud, vaniglia dolce",
+    "top_notes": "Bergamotto, Note verdi",
+    "middle_notes": "Note dolci, Melone, Ananas, Cedro, Ambra",
+    "base_notes": "Note legnose, Mirra, Vaniglia",
+    "genre": "unisex",
+    "longevity": "molto buona",
+    "projection": "forte",
+    "season": "Tutte le stagioni",
     "price": "€75,00",
     "image": "img/amberoudgold.png",
     "description": "Un mix opulento e sensuale, ricco di personalità.",
-    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQS_9K7wINYST7QcsBjU2073AUSVI_72AUKuvED0pEKAKiw?width=1080&height=1920"
+    "video_review": "video/Amber Oud Gold Edition di Al Haramain.mov"
   },
   {
     "id": 6,
@@ -60,10 +95,17 @@
     "brand": "L'Erbolario",
     "category": "Eau de Parfum",
     "notes": "Ambra, legni caldi, note balsamiche",
+    "top_notes": "Vaniglia Bourbon, Geranio, Rosa",
+    "middle_notes": "Sandalo, Legno di Guaiaco, Patchouli",
+    "base_notes": "Vaniglia Bourbon, Benzoino del Siam, Storace",
+    "genre": "unisex",
+    "longevity": "moderata",
+    "projection": "moderata",
+    "season": "Autunno, Inverno",
     "price": "€49,00",
     "image": "img/ambraliquida.png",
     "description": "Una fragranza avvolgente e rassicurante.",
-    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQTtESJywGwrTr4FbAVuT6h2Afp7OEZm2wj3OGytedEqddQ?width=1080&height=1920"
+    "video_review": "video/Ambraliquida di L'Erbolario.mov"
   },
   {
     "id": 7,
@@ -71,10 +113,17 @@
     "brand": "John Varvatos",
     "category": "Eau de Toilette",
     "notes": "Agrumi, erbe aromatiche, legni chiari",
+    "top_notes": "Clementina, Tangerino, Maggiorana, Timo",
+    "middle_notes": "Fiore d'arancio, Zenzero, Lavanda, Gelsomino",
+    "base_notes": "Muschio, Note legnose, Ambra",
+    "genre": "maschile",
+    "longevity": "scarsa",
+    "projection": "leggera",
+    "season": "Primavera, Estate",
     "price": "€69,90",
     "image": "img/artisanpure.png",
     "description": "Fresco e naturale, ispirato a paesaggi luminosi.",
-    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQSK-OTbPi6XR57SBH87VeFhARrJNt7iI5uODAc5eTZZf6k?width=1080&height=1920"
+    "video_review": "video/Artisan Pure di John Varvatos.mov"
   },
   {
     "id": 8,
@@ -82,10 +131,17 @@
     "brand": "Yodeyma",
     "category": "Eau de Parfum",
     "notes": "Note marine, muschio, agrumi",
+    "top_notes": "Note marine, Agrumi",
+    "middle_notes": "Note floreali, Legno di cedro",
+    "base_notes": "Muschio, Ambra",
+    "genre": "maschile",
+    "longevity": "moderata",
+    "projection": "moderata",
+    "season": "Primavera, Estate",
     "price": "€25,00",
     "image": "img/bluesand.png",
     "description": "Economico ma sorprendente, fresco e dinamico.",
-    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQQfWU93jupTT6zPkcA8Okw_Ad5QIb4zgT2FDdnn4WBg6v8?width=1080&height=1920"
+    "video_review": "video/Blue Sand di Yodeyma.mov"
   },
   {
     "id": 9,
@@ -93,10 +149,17 @@
     "brand": "Zara",
     "category": "Eau de Parfum",
     "notes": "Pelle, agrumi, muschio",
+    "top_notes": "Limone, Ananas",
+    "middle_notes": "Pelle, Note legnose",
+    "base_notes": "Ambra, Note marine",
+    "genre": "maschile",
+    "longevity": "moderata",
+    "projection": "moderata",
+    "season": "Primavera, Estate",
     "price": "€35,00",
     "image": "img/bogossvibrantleather.png",
     "description": "Un mix moderno e giovanile con carattere deciso.",
-    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQQ5tBRhOVMXRIqxx9RQv_veAVWSPSz7GMyUP4j-ETgRxQ8?width=1080&height=1920"
+    "video_review": "video/Bogoss Vibrant Leather by Zara.mov"
   },
   {
     "id": 10,
@@ -104,10 +167,17 @@
     "brand": "Milton Lloyd",
     "category": "Eau de Toilette",
     "notes": "Spezie, legni, note orientali",
+    "top_notes": "Arancia, Pompelmo, Note marine",
+    "middle_notes": "Gelsomino, Geranio, Foglia di alloro",
+    "base_notes": "Legno di cedro, Ambra, Muschio di quercia",
+    "genre": "maschile",
+    "longevity": "buona",
+    "projection": "moderata",
+    "season": "Autunno, Inverno",
     "price": "€19,90",
     "image": "img/bondagehommes.png",
     "description": "Fragranza economica con sorprendente intensità.",
-    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQR1IeIByL59TKGCdwbIMo3KAcYxFUz39hP4-TRGnVuFZg0?width=1080&height=1920"
+    "video_review": "video/Bondage Hommes di Milton Lloyd.mov"
   },
   {
     "id": 11,
@@ -115,10 +185,17 @@
     "brand": "Al Haramain Perfumes",
     "category": "Eau de Parfum",
     "notes": "Vaniglia, lavanda, ambra",
+    "top_notes": "Bergamotto, Lavanda, Mela verde, Mandarino, Pepe",
+    "middle_notes": "Violetta, Gelsomino, Geranio, Cardamomo",
+    "base_notes": "Patchouli, Sandalo, Legno di guaiaco, Vaniglia, Muschio",
+    "genre": "maschile",
+    "longevity": "buona",
+    "projection": "forte",
+    "season": "Inverno, Autunno",
     "price": "€59,00",
     "image": "img/detournoir.png",
     "description": "Caldo e seducente, perfetto per l’inverno.",
-    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQRG6aYFJozpSqn61c1ylzIWAaBQ1xP2VcJvlDUvb8B-Rws?width=1080&height=1920"
+    "video_review": "video/Détour Noir di Al Haramain Perfumes.mov"
   },
   {
     "id": 12,
@@ -126,10 +203,17 @@
     "brand": "Dior",
     "category": "Eau de Toilette",
     "notes": "Iris, cuoio, vetiver",
+    "top_notes": "Lavanda, Bergamotto, Salvia",
+    "middle_notes": "Iris, Cacao, Ambra",
+    "base_notes": "Cuoio, Vetiver, Patchouli",
+    "genre": "maschile",
+    "longevity": "buona",
+    "projection": "moderata",
+    "season": "Autunno, Inverno",
     "price": "€89,00",
     "image": "img/diorhomme.png",
     "description": "Eleganza moderna con un tocco floreale maschile.",
-    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQSUEAIyGvSCSIDcUBgsnQuiAfhv-VE5N14qs0ZG9xQbFrk?width=1080&height=1920"
+    "video_review": "video/Dior Homme di Dior.mov"
   },
   {
     "id": 13,
@@ -137,10 +221,17 @@
     "brand": "Dsquared2",
     "category": "Eau de Toilette",
     "notes": "Legni, agrumi, muschio",
+    "top_notes": "Limone, Cedro",
+    "middle_notes": "Legno di Cedro, Vetiver di Haiti, Cipresso, Abete Argentato",
+    "base_notes": "Muschio",
+    "genre": "unisex",
+    "longevity": "scarsa",
+    "projection": "leggera",
+    "season": "Tutte le stagioni",
     "price": "€55,00",
     "image": "img/2wood.png",
     "description": "Giovanile e dinamico, ideale per tutti i giorni.",
-    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQRqRzLOVNXbQIjceKZYOaqzAfcVXSfpnXNCuVG8cZ54gU4?width=1080&height=1920"
+    "video_review": "video/Dsquared2 di 2WOOD.mov"
   },
   {
     "id": 14,
@@ -148,10 +239,17 @@
     "brand": "Montblanc",
     "category": "Eau de Parfum",
     "notes": "Bergamotto, vetiver, patchouli",
+    "top_notes": "Bergamotto, Pepe rosa, Salvia sclarea",
+    "middle_notes": "Cuoio, Vetiver di Haiti",
+    "base_notes": "Ambroxan, Legno di Akigala, Patchouli indonesiano, Baccello di cacao",
+    "genre": "maschile",
+    "longevity": "buona",
+    "projection": "moderata",
+    "season": "Tutte le stagioni",
     "price": "€75,00",
     "image": "img/explorer.png",
     "description": "Un profumo avventuroso e deciso.",
-    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQSsUIk1VjyaTLOJViyDfFxlAbNdxSJKeh9VPVaHeZhnEhI?width=1080&height=1920"
+    "video_review": "video/Explorer di Montblanc da uomo.mov"
   },
   {
     "id": 15,
@@ -159,10 +257,17 @@
     "brand": "L'Erbolario",
     "category": "Acqua Profumata",
     "notes": "Fiori delicati, agrumi, muschio bianco",
+    "top_notes": "Note agrumate",
+    "middle_notes": "Note floreali",
+    "base_notes": "Muschio bianco",
+    "genre": "unisex",
+    "longevity": "scarsa",
+    "projection": "leggera",
+    "season": "Tutte le stagioni",
     "price": "€29,90",
     "image": "img/profumodeipiccoli.png",
     "description": "Una fragranza delicata pensata per i più piccoli.",
-    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQRAzlacSZnvRbOjWyolXFlTAe2Rj6RzlsFOLT0jQUt0O4U?width=1080&height=1920"
+    "video_review": "video/Il Profumo dei Piccoli di L'Erbolario.mov"
   },
   {
     "id": 16,
@@ -170,10 +275,17 @@
     "brand": "Tommy Hilfiger",
     "category": "Eau de Parfum",
     "notes": "Note fruttate, cacao, legni ambrati",
+    "top_notes": "Mela rossa, Pompelmo, Elemi",
+    "middle_notes": "Castaño, Cipresso, Spezie",
+    "base_notes": "Ambra, Legno di sandalo, Patchouli, Cedro",
+    "genre": "maschile",
+    "longevity": "buona",
+    "projection": "moderata",
+    "season": "Autunno, Inverno",
     "price": "€65,00",
     "image": "img/impactintense.png",
     "description": "Energetico e moderno, pensato per giovani dinamici.",
-    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQQngz03redfSYLog9B6MvzQAeijibnBAsarTHcCoMsGRQI?width=1080&height=1920"
+    "video_review": "video/Impact Intense di Tommy Hilfiger.mov"
   },
   {
     "id": 17,
@@ -181,10 +293,17 @@
     "brand": "Jimmy Choo",
     "category": "Eau de Toilette",
     "notes": "Note marine, pepe, patchouli",
+    "top_notes": "Cardamomo, Pompelmo",
+    "middle_notes": "Geranio, Salvia sclarea, Note marine",
+    "base_notes": "Ambra, Patchouli, Muschio salato",
+    "genre": "maschile",
+    "longevity": "moderata",
+    "projection": "moderata",
+    "season": "Estate, Primavera",
     "price": "€72,00",
     "image": "img/jimmychooman.png",
     "description": "Fresco e vivace, perfetto per l’estate.",
-    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQRGMkNG3ARnQr9hBp3C2QaPARZzYKqZMFvL2QWskrLxg5Q?width=1080&height=1920"
+    "video_review": "video/Jimmy Choo Man Aqua di Jimmy Choo.mov"
   },
   {
     "id": 18,
@@ -192,10 +311,17 @@
     "brand": "Lattafa Perfumes",
     "category": "Eau de Parfum",
     "notes": "Caffè, spezie, vaniglia",
+    "top_notes": "Cannella, Noce moscata, Cardamomo",
+    "middle_notes": "Datteri, Pralina, Fiori bianchi",
+    "base_notes": "Vaniglia, Fava Tonka, Benzoino, Ambra, Mirra",
+    "genre": "unisex",
+    "longevity": "ottima",
+    "projection": "forte",
+    "season": "Autunno, Inverno",
     "price": "€49,90",
     "image": "img/khamrahqahwa.png",
     "description": "Caldo e gourmand, ideale nelle stagioni fredde.",
-    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQRkJOcLbvPfRohXC7Jsg7XPASFGVebulz26pGSNpV4Qvas?width=1080&height=1920"
+    "video_review": "video/Khamrah Qahwa di Lattafa Perfumes.mov"
   },
   {
     "id": 19,
@@ -203,10 +329,17 @@
     "brand": "Guerlain",
     "category": "Eau de Parfum",
     "notes": "Mandorla, cuoio, vaniglia",
+    "top_notes": "Bergamotto, Spezie, Mandorla",
+    "middle_notes": "Rosa turca, Incenso, Vaniglia",
+    "base_notes": "Sandalo, Cuoio, Fava Tonka",
+    "genre": "maschile",
+    "longevity": "buona",
+    "projection": "moderata",
+    "season": "Autunno, Inverno",
     "price": "€95,00",
     "image": "img/lhommeideal.png",
     "description": "Raffinato e sensuale, un classico maschile moderno.",
-    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQSv6iCDyVZMRqD6jxFxLV--AaUVHx3EkkS63hCOSdWEsyA?width=1080&height=1920"
+    "video_review": "video/L’Homme Ideal Eau de Parfum di Guerlain.mov"
   },
   {
     "id": 20,
@@ -214,10 +347,17 @@
     "brand": "Lacoste Fragrances",
     "category": "Eau de Toilette",
     "notes": "Agrumi, spezie, legni",
+    "top_notes": "Rabarbaro, Mela Cotogna, Arancia, Pompelmo, Mandarino, Limone",
+    "middle_notes": "Zenzero, Pepe Nero, Ananas, Hedione, Mandorla, Gelsomino",
+    "base_notes": "Vetiver, Vaniglia, Ambra, Legno di Cedro, Olio di Cypriol, Amberwood, Akigalawood, Muschio",
+    "genre": "maschile",
+    "longevity": "moderata",
+    "projection": "moderata",
+    "season": "Tutte le stagioni",
     "price": "€65,00",
     "image": "img/lacostehomme.png",
     "description": "Sportivo ed elegante, versatile per ogni occasione.",
-    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQRcVsIpts8fS7J1N7PKyGoWAUSLVQMQPqUNrKywQljwyjc?width=1080&height=1920"
+    "video_review": "video/L'Homme Lacoste Intense di Lacoste Fragrances.mov"
   },
   {
     "id": 21,
@@ -225,10 +365,17 @@
     "brand": "Lattafa Perfumes",
     "category": "Eau de Parfum",
     "notes": "Note speziate, legni orientali, ambra",
+    "top_notes": "Menta, Lime, Pompelmo, Lavanda, Ananas",
+    "middle_notes": "Ginepro, Pepe nero, Rosmarino, Geranio, Olibano",
+    "base_notes": "Ambroxan, Muschio di quercia, Vetiver, Labdano, Fava Tonka",
+    "genre": "maschile",
+    "longevity": "buona",
+    "projection": "moderata",
+    "season": "Primavera, Estate",
     "price": "€55,00",
     "image": "img/maahirlegacy.png",
     "description": "Orientale e intenso, con grande persistenza.",
-    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQQGish59bxySq9ntOqYs0BIAVCd-39AAEn9_cDFQ6ZEuQQ?width=1080&height=1920"
+    "video_review": "video/Maahir Legacy di Lattafa Perfumes.mov"
   },
   {
     "id": 22,
@@ -236,10 +383,17 @@
     "brand": "Escentric Molecules",
     "category": "Eau de Toilette",
     "notes": "Ambroxan puro",
+    "top_notes": "Ambroxan",
+    "middle_notes": "Ambroxan",
+    "base_notes": "Ambroxan",
+    "genre": "unisex",
+    "longevity": "moderata",
+    "projection": "leggera",
+    "season": "Tutte le stagioni",
     "price": "€99,00",
     "image": "img/molecule02.png",
     "description": "Minimalista e unico, basato su una sola molecola.",
-    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQQGish59bxySq9ntOqYs0BIAVCd-39AAEn9_cDFQ6ZEuQQ?width=1080&height=1920"
+    "video_review": "video/Molecule 02 di Escentric Molecules.mov"
   },
   {
     "id": 23,
@@ -247,10 +401,17 @@
     "brand": "M. Micallef",
     "category": "Eau de Parfum",
     "notes": "Agrumi, note marine, legni aromatici",
+    "top_notes": "Note ozoniche, Arancia, Petitgrain",
+    "middle_notes": "Narciso, Gelsomino Sambac, Coriandolo",
+    "base_notes": "Muschio bianco, Patchouli",
+    "genre": "unisex",
+    "longevity": "buona",
+    "projection": "moderata",
+    "season": "Primavera, Estate",
     "price": "€120,00",
     "image": "img/osaito.png",
     "description": "Eleganza mediterranea con spirito raffinato.",
-    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQRVcSfcxQU2Q7sliINCSGStAU14v_tcWMs_yrxl0hfk1Qw?width=1080&height=1920"
+    "video_review": "video/Osaïto di M. Micallef.mov"
   },
   {
     "id": 24,
@@ -258,10 +419,17 @@
     "brand": "Prada",
     "category": "Eau de Toilette",
     "notes": "Iris, ambra, patchouli",
+    "top_notes": "Pepe nero, Neroli, Cardamomo",
+    "middle_notes": "Iris, Ambra, Violetta",
+    "base_notes": "Sandalo, Cedro, Patchouli",
+    "genre": "maschile",
+    "longevity": "buona",
+    "projection": "moderata",
+    "season": "Tutte le stagioni",
     "price": "€89,00",
     "image": "img/pradalhomme.png",
     "description": "Sofisticato e moderno, con un cuore floreale maschile.",
-    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQQ5siE8SDFWQYp_Q3mZ8It8AYxpLehaTFu3Gm_RGG9lgto?width=1080&height=1920"
+    "video_review": "video/Prada L'Homme di Prada.mov"
   },
   {
     "id": 25,
@@ -269,10 +437,17 @@
     "brand": "Afnan",
     "category": "Eau de Parfum",
     "notes": "Muschio bianco, fiori puliti",
+    "top_notes": "Muschio, Muschio bianco, Note floreali",
+    "middle_notes": "Muschio",
+    "base_notes": "Muschio naturale",
+    "genre": "unisex",
+    "longevity": "buona",
+    "projection": "moderata",
+    "season": "Tutte le stagioni",
     "price": "€45,00",
     "image": "img/puremusk.png",
     "description": "Semplice e pulito, ideale per chi ama fragranze leggere.",
-    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQTijExMbj0SQ5zT7yZ6cMnYAfmGyH3k6e3avL2gqew9CH0?width=1080&height=1920"
+    "video_review": "video/Pure Musk di Afnan.mov"
   },
   {
     "id": 26,
@@ -280,10 +455,17 @@
     "brand": "Dior",
     "category": "Eau de Parfum",
     "notes": "Bergamotto, ambroxan, vaniglia",
+    "top_notes": "Bergamotto, Mandarino, Elemi",
+    "middle_notes": "Sandalo",
+    "base_notes": "Olibano, Fava Tonka, Vaniglia",
+    "genre": "maschile",
+    "longevity": "buona",
+    "projection": "forte",
+    "season": "Tutte le stagioni",
     "price": "€99,00",
     "image": "img/sauvage.png",
     "description": "Potente e iconico, una fragranza che non passa inosservata.",
-    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQQAWkj-XCO8R7HMnImC38etAW3cugrAwuJ6qBSUR5LNSns?width=1080&height=1920"
+    "video_review": "https://www.youtube.com/embed/OY4AlDpXSz0"
   },
   {
     "id": 27,
@@ -291,10 +473,17 @@
     "brand": "Lattafa Perfumes",
     "category": "Eau de Parfum",
     "notes": "Fiori orientali, spezie, legni",
+    "top_notes": "Bergamotto, Limone, Zenzero, Cardamomo",
+    "middle_notes": "Geranio, Menta, Lavanda",
+    "base_notes": "Ambra, Patchouli, Vetiver, Legno di cedro",
+    "genre": "maschile",
+    "longevity": "buona",
+    "projection": "moderata",
+    "season": "Tutte le stagioni",
     "price": "€60,00",
     "image": "img/alnashamacaprice.png",
     "description": "Un profumo elegante dal fascino orientale.",
-    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQRxmDAbb_cxSYht0c8S57ItAUV5p1E01KRIbKNwOpnkGpo?width=1080&height=1920"
+    "video_review": "video/Al Nashama Caprice di Lattafa perfumes.mov"
   },
   {
     "id": 28,
@@ -302,10 +491,17 @@
     "brand": "L'Erbolario",
     "category": "Eau de Parfum",
     "notes": "Mandorla dolce, fiori bianchi, vaniglia",
+    "top_notes": "Gelsomino, Bergamotto",
+    "middle_notes": "Mandorla",
+    "base_notes": "Vaniglia, Benzoino del Siam",
+    "genre": "unisex",
+    "longevity": "moderata",
+    "projection": "moderata",
+    "season": "Autunno, Inverno",
     "price": "€49,00",
     "image": "img/mandorla.png",
     "description": "Dolce e avvolgente, con note gourmand.",
-    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQSl-5A1qdP5SLnQRkTwMD4jAVU6pftE6T9RsrwxkCz3gC8?width=1920&height=1080"
+    "video_review": "video/Mandorla di Erbolario.mov"
   },
   {
     "id": 29,
@@ -313,10 +509,17 @@
     "brand": "Versatile Paris",
     "category": "Eau de Parfum",
     "notes": "Cola, spezie, agrumi",
+    "top_notes": "Note dolci, Note fruttate, Agrumi",
+    "middle_notes": "Cannella, Noce moscata, Cacao",
+    "base_notes": "Vaniglia, Benzoino, Legno di sandalo",
+    "genre": "unisex",
+    "longevity": "moderata",
+    "projection": "moderata",
+    "season": "Tutte le stagioni",
     "price": "€95,00",
     "image": "img/godblesscola.png",
     "description": "Frizzante e originale, con un tocco pop.",
-    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQTcLYgaQBG2SL-V82S-61G6ASzmoPOMVlsfOrP6xSf5fps?width=1080&height=1920"
+    "video_review": "video/God Bless Cola di Versatile Paris.mov"
   },
   {
     "id": 30,
@@ -324,10 +527,17 @@
     "brand": "Versace",
     "category": "Eau de Toilette",
     "notes": "Agrumi, ambroxan, incenso",
+    "top_notes": "Bergamotto di Calabria, Pompelmo, Note acquatiche, Foglia di fico",
+    "middle_notes": "Ambroxan, Pepe nero, Patchouli, Foglia di violetta, Papiro",
+    "base_notes": "Incenso, Muschio, Fava tonka, Zafferano",
+    "genre": "maschile",
+    "longevity": "buona",
+    "projection": "forte",
+    "season": "Tutte le stagioni",
     "price": "€79,00",
     "image": "img/dylanblue.png",
     "description": "Moderno e sensuale, uno dei best seller Versace.",
-    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQSFrMpb65XrQoY2Ipy2Anb9AcC4vLQYliYW-j_O93L3H6o?width=1080&height=1920"
+    "video_review": "video/Dylan Blue di Versace.mov"
   },
   {
     "id": 31,
@@ -335,10 +545,17 @@
     "brand": "M. Micallef",
     "category": "Eau de Parfum",
     "notes": "Note speziate, cuoio, legni scuri",
+    "top_notes": "Bergamotto, Limone, Note speziate",
+    "middle_notes": "Noce moscata, Cannella, Fava tonka, Fiori",
+    "base_notes": "Cuoio, Legno di sandalo, Muschio di quercia",
+    "genre": "unisex",
+    "longevity": "ottima",
+    "projection": "forte",
+    "season": "Inverno, Autunno",
     "price": "€135,00",
     "image": "img/desirtoxic.png",
     "description": "Intenso e misterioso, dal carattere deciso.",
-    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQRRpUbF_0uaR7P0wPS2uVa6AXDUNVsYaiHf7ODULpkf6DM?width=1080&height=1920"
+    "video_review": "video/DesirToxic di M.Micallef.mov"
   },
   {
     "id": 32,
@@ -346,10 +563,17 @@
     "brand": "Viktor&Rolf",
     "category": "Eau de Parfum",
     "notes": "Tabacco, vaniglia, spezie calde",
+    "top_notes": "Carvi, Pepe rosa, Vaniglia",
+    "middle_notes": "Cannella, Zafferano, Cumino",
+    "base_notes": "Tabacco, Note legnose, Ambra",
+    "genre": "maschile",
+    "longevity": "buona",
+    "projection": "forte",
+    "season": "Inverno",
     "price": "€120,00",
     "image": "img/spicebombextreme.png",
     "description": "Un’esplosione di spezie e calore.",
-    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQSicGToQx84QrRm_RtLMl1XAT9Gmt2WU7SQf_5-VAhgUP0?width=1080&height=1920"
+    "video_review": "video/Spicebomb Extreme di Viktor&Rolf.mov"
   },
   {
     "id": 33,
@@ -357,10 +581,17 @@
     "brand": "Lattafa Perfumes",
     "category": "Eau de Parfum",
     "notes": "Muschio bianco, legni dolci, note fresche",
+    "top_notes": "Muschio bianco, Olio di cypriol o Nagarmotha",
+    "middle_notes": "Vaniglia, Cardamomo, Zafferano",
+    "base_notes": "Fava Tonka, Legno di Guaiaco",
+    "genre": "unisex",
+    "longevity": "buona",
+    "projection": "moderata",
+    "season": "Tutte le stagioni",
     "price": "€45,00",
     "image": "img/anaabiyedh.png",
     "description": "Pulito, muschiato e avvolgente.",
-    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQRddfXcI8VZRrTPXGN-2NpgAb7iGpjkIZGL-jV1SKX5Y2M?width=1080&height=1920"
+    "video_review": "video/Ana Abiyedh di Lattafa Perfumes.mov"
   },
   {
     "id": 34,
@@ -368,10 +599,17 @@
     "brand": "Zara",
     "category": "Eau de Parfum",
     "notes": "Caramello, vaniglia, note gourmand",
+    "top_notes": "Mela, Zucchero",
+    "middle_notes": "Caramello, Note gourmand",
+    "base_notes": "Vaniglia, Muschio",
+    "genre": "unisex",
+    "longevity": "moderata",
+    "projection": "moderata",
+    "season": "Inverno, Autunno",
     "price": "€29,90",
     "image": "img/spellcaramel.png",
     "description": "Dolce e seducente, perfetto per chi ama note zuccherine.",
-    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQQj5PTiW04STJsGpFII8hSiAakeTEbc7Fz4YwfZpkVAtrA?width=1080&height=1920"
+    "video_review": "video/Spell Caramel di Zara.mov"
   },
   {
     "id": 35,
@@ -379,10 +617,17 @@
     "brand": "Lattafa Perfumes",
     "category": "Eau de Parfum",
     "notes": "Agrumi freschi, note legnose, spezie leggere",
+    "top_notes": "Lavanda, Cardamomo, Agrumi",
+    "middle_notes": "Rosa, Incenso, Patchouli",
+    "base_notes": "Ambra, Muschio, Note legnose",
+    "genre": "maschile",
+    "longevity": "buona",
+    "projection": "moderata",
+    "season": "Tutte le stagioni",
     "price": "€39,90",
     "image": "img/ejaazi.png",
     "description": "Equilibrato e versatile, adatto a ogni occasione.",
-    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQRxDkAlCIFAS6eJ8IeIB6yYARRkN_vUnve7q2SC2ZpQfpU?width=1920&height=1080"
+    "video_review": "video/Ejaazi di Lattafa Parfumes.mov"
   },
   {
     "id": 36,
@@ -390,10 +635,17 @@
     "brand": "Zara",
     "category": "Eau de Toilette",
     "notes": "Tabacco, miele, cocco",
+    "top_notes": "Rum, Tabacco",
+    "middle_notes": "Cocco, Miele",
+    "base_notes": "Sandalo, Vaniglia",
+    "genre": "maschile",
+    "longevity": "buona",
+    "projection": "moderata",
+    "season": "Autunno, Inverno",
     "price": "€29,90",
     "image": "img/tobaccocollection.png",
     "description": "Caldo e irresistibile, amatissimo dagli appassionati.",
-    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQQmsRG4LKkBT6V_ia8TZYWuAc21ERrY76ZjpyR4M79c8Do?width=1080&height=1920"
+    "video_review": "https://www.youtube.com/embed/USO9sTF3eus"
   },
   {
     "id": 37,
@@ -401,10 +653,17 @@
     "brand": "Parfums de Marly",
     "category": "Eau de Parfum",
     "notes": "Tabacco, vaniglia, cannella",
+    "top_notes": "Cannella, Pepe",
+    "middle_notes": "Foglia di tabacco, Incenso, Gelsomino, Labdano",
+    "base_notes": "Vaniglia, Muschio, Cedro, Iso E Super, Vetiver, Cipresso",
+    "genre": "maschile",
+    "longevity": "buona",
+    "projection": "forte",
+    "season": "Inverno, Autunno",
     "price": "€210,00",
     "image": "img/herod.png",
     "description": "Iconico tabaccato dolce, elegante e persistente.",
-    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQSkZWcsM9ymSoWnheBj3p1jAWUvv9c9wIxqEcZOa80GjxE?width=1080&height=1920"
+    "video_review": "video/Herod di Parfums De Marly.mov"
   },
   {
     "id": 38,
@@ -412,10 +671,17 @@
     "brand": "Mancera",
     "category": "Eau de Parfum",
     "notes": "Tabacco, spezie forti, legni",
+    "top_notes": "Zafferano, Cannella, Incenso, Noce moscata, Mela verde, Pera bianca, Oud",
+    "middle_notes": "Patchouli, Gelsomino",
+    "base_notes": "Tabacco, Vaniglia, Ambra, Sandalo, Guaiaco, Vetiver di Haiti, Muschio bianco",
+    "genre": "unisex",
+    "longevity": "ottima",
+    "projection": "enorme",
+    "season": "Inverno, Autunno",
     "price": "€145,00",
     "image": "img/redtobacco.png",
     "description": "Potente e speziato, per veri amanti delle fragranze intense.",
-    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQQHUr-Sc-jQR7v41IxMT_BOAe8iIuImOWtWJQ6Iojx7Fls?width=1080&height=1920"
+    "video_review": "video/Red Tobacco di Mancera.mov"
   },
   {
     "id": 39,
@@ -423,9 +689,16 @@
     "brand": "L'Erbolario",
     "category": "Eau de Parfum",
     "notes": "Assenzio, erbe aromatiche, legni verdi",
+    "top_notes": "Assenzio Romano, Limone, Arancia",
+    "middle_notes": "Artemisia, Coriandolo, Lavanda, Cardamomo",
+    "base_notes": "Muschio, Garofano, Geranio, Patchouli, Benzoino",
+    "genre": "unisex",
+    "longevity": "moderata",
+    "projection": "moderata",
+    "season": "Tutte le stagioni",
     "price": "€49,00",
     "image": "img/assenzio.png",
     "description": "Erbaceo e misterioso, con un carattere unico.",
-    "video_review": "https://1drv.ms/v/c/fed1facebbfa2487/IQTX5SHWvvmWSZjBb5jOQBQiAf63Ffav5dQlEQH5kEyLO6Q?width=1920&height=1080"
+    "video_review": "video/Assenzio di L'Erbolario.mov"
   }
 ]

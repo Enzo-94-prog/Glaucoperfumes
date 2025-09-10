@@ -5,6 +5,10 @@ async function loadPerfumes() {
   return await response.json();
 }
 
+
+/* --------------------------------------------------------------------- */
+
+
 // Se siamo nella index.html → mostra lista profumi
 if (document.getElementById("perfume-list")) {
   loadPerfumes().then(perfumes => {
@@ -39,7 +43,7 @@ if (document.getElementById("perfume-card")) {
   loadPerfumes().then(perfumes => {
     const perfume = perfumes.find(p => p.id === perfumeId);
     const container = document.getElementById("perfume-card");
-    const videoContainer = document.querySelector(".video-container"); // seleziona il contenitore del video
+    const videoContainer = document.getElementById("video-container"); 
 
     if (perfume) {
       container.innerHTML = `
@@ -54,19 +58,21 @@ if (document.getElementById("perfume-card")) {
         </div>
       `;
 
-      // Creo dinamicamente l'iframe del video nel contenitore responsivo
-      if (videoContainer) {
+
+      // Crea dinamicamente l'elemento <iframe> nel contenitore responsivo
+      if (videoContainer && perfume.video_review) {
+
         const iframe = document.createElement("iframe");
+
         iframe.src = perfume.video_review;
-        iframe.title = "Video recensione";
+        iframe.title = "Video recensione di " + perfume.name;
         iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
         iframe.allowFullscreen = true;
-        // Larghezza e altezza verranno gestite dal CSS responsive
+
         videoContainer.appendChild(iframe);
       }
 
-    } else {
-      container.innerHTML = "<p>Profumo non trovato.</p>";
-    }
+
+    } 
   });
 }

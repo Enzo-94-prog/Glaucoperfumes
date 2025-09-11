@@ -13,7 +13,7 @@
     --backgroundIconNavbar: var(--white);
     --backgroundBody: rgb(0, 128, 45);      
     --backgroundHeader: rgb(0, 204, 255); 
-    --backgroundMain: rgb(0, 145, 255);   */     
+    --backgroundMain: rgb(0, 145, 255);    */  
 }
 
 /* Stile principale della barra di navigazione (navbar): */
@@ -289,6 +289,7 @@ footer {
     border-radius: 10px;
     border: 6px solid var(--main-green); 
     background-color: var(--background);
+    
 }
 
 .perfume-card img {
@@ -306,8 +307,7 @@ footer {
     margin-bottom: 1rem;
 }
 
-.perfume-card p,
-.perfume-card li {
+.perfume-card p, li {
     text-align: center;
     font-size: 1rem;
     color: #444;
@@ -362,3 +362,58 @@ footer {
     height: 100%;
     display: block;
 }
+
+/*-------------------------------------------------------------*/
+
+                            /* Dettagli del profumo */
+/* Container */
+.perfume-details {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: var(--background);
+}
+
+/* Descrizione*/
+.perfume-details h1 { 
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Descrizione dettagliata del profumo */
+.perfume-details h2 { 
+    text-align: justify;
+    font-size: 1rem;
+    font-weight: normal;   /* rimuove il grassetto */
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    margin-top: auto;
+}
+
+/* Note di apertura, centrali e di base*/
+.perfume-details p { 
+    text-align: center;
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    margin-top: auto;
+}
+
+/* Note */
+.perfume-details li {        
+    text-align: center;
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+    list-style-type: none; /* rimuove il pallino */
+}
+
+
+
+

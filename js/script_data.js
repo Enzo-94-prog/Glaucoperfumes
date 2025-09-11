@@ -16,19 +16,20 @@ if (document.getElementById("perfume-list")) {
     const container = document.getElementById("perfume-list");
     perfumes.forEach(p => {
       container.innerHTML += `
-        <div class="perfume-card">
+       
+      <a href="perfume.html?id=${p.id}" class="perfume-card"> 
+        
+        <div>
 
-          <a href="perfume.html?id=${p.id}">
-            <img src="${p.image}" alt="${p.name}" class="perfume-image">
-          </a>
-          
+          <img src="${p.image}" alt="${p.name}" class="perfume-image">
           <h2 class="perfume-title">${p.name}</h2>
           <p class="perfume-meta">${p.brand}</p>
     
         </div>
+
+      </a>
       `;
     });
-
   });
 }
 
@@ -44,17 +45,20 @@ if (document.getElementById("perfume-card")) {
     const perfume = perfumes.find(p => p.id === perfumeId);
     const container = document.getElementById("perfume-card");
     const videoContainer = document.getElementById("video-container"); 
+    const descriptionContainer = document.getElementById("perfume-details");
 
     if (perfume) {
       container.innerHTML = `
         <div class="perfume-card">
+
           <h1>${perfume.name}</h1>
           <img src="${perfume.image}" alt="${perfume.name}">
-          <p><strong>Marca:</strong> ${perfume.brand}</p>
-          <p><strong>Categoria:</strong> ${perfume.category}</p>
-          <p><strong>Note:</strong> ${perfume.notes}</p>
-          <p><strong>Prezzo:</strong> ${perfume.price}</p>
+          <p><strong> Marca: </strong> ${perfume.brand}</p> 
+          <p><strong> Categoria: </strong> ${perfume.category}</p>
+          <p><strong> Note: </strong> ${perfume.notes}</p>
+          <p><strong> Prezzo: </strong> ${perfume.price}</p>
           <p>${perfume.description}</p>
+
         </div>
       `;
 
@@ -72,7 +76,37 @@ if (document.getElementById("perfume-card")) {
         videoContainer.appendChild(iframe);
       }
 
+      if(descriptionContainer) {
 
+        descriptionContainer.innerHTML = `
+        
+        <h1> Descrizione </h1>
+        <h2> ${perfume.detailed_description} </h2>
+
+        <div class="perfume-details">
+
+          <p><strong> Note di Apertura: </strong></p>
+          <li>${perfume.top_notes}</li>
+          
+          <p><strong> Note Centrali: </strong></p>
+          <li>${perfume.middle_notes}</li>
+          
+          <p><strong> Note di Base: </strong></p>
+          <li>${perfume.base_notes}</li>
+
+        
+          <p><strong> Genere: </strong>${perfume.genre}</p>
+          <p><strong> Durata: </strong>${perfume.longevity}</p>
+          <p><strong> Proiezione: </strong>${perfume.projection}</p>
+          <p><strong> Stagione: </strong>${perfume.season}</p>
+
+         
+        </div>
+
+
+        
+        `;
+      }
     } 
   });
 }

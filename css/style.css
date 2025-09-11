@@ -328,6 +328,8 @@ footer {
     text-align: center;
     width: 100%;
     box-sizing: border-box;
+    text-decoration: none;          /* rimuove sottolineatura dal link */
+    color: inherit;                 /* mantiene il colore del testo */
 }
 
 .perfume-card:hover {

@@ -69,7 +69,7 @@
     "price": "€89,00",
     "image": "img/ambassadorintense.png",
     "description": "Moderno e avvolgente, perfetto per serate speciali.",
-    "video_review": "video/Ambassador Intense di Gisada.mov"
+    "video_review": "https://www.youtube.com/embed/e-eCBRle0CY"
   },
   {
     "id": 5,
@@ -87,7 +87,7 @@
     "price": "€75,00",
     "image": "img/amberoudgold.png",
     "description": "Un mix opulento e sensuale, ricco di personalità.",
-    "video_review": "video/Amber Oud Gold Edition di Al Haramain.mov"
+    "video_review": "https://www.youtube.com/embed/cT3apeb5ggA"
   },
   {
     "id": 6,
@@ -105,7 +105,7 @@
     "price": "€49,00",
     "image": "img/ambraliquida.png",
     "description": "Una fragranza avvolgente e rassicurante.",
-    "video_review": "video/Ambraliquida di L'Erbolario.mov"
+    "video_review": "https://www.youtube.com/embed/wR0HOzfK2vA"
   },
   {
     "id": 7,
@@ -123,7 +123,7 @@
     "price": "€69,90",
     "image": "img/artisanpure.png",
     "description": "Fresco e naturale, ispirato a paesaggi luminosi.",
-    "video_review": "video/Artisan Pure di John Varvatos.mov"
+    "video_review": "https://www.youtube.com/embed/M7wW2WaESGQ"
   },
   {
     "id": 8,
@@ -141,7 +141,7 @@
     "price": "€25,00",
     "image": "img/bluesand.png",
     "description": "Economico ma sorprendente, fresco e dinamico.",
-    "video_review": "video/Blue Sand di Yodeyma.mov"
+    "video_review": "https://www.youtube.com/embed/gx__D20hD4E"
   },
   {
     "id": 9,
@@ -159,7 +159,7 @@
     "price": "€35,00",
     "image": "img/bogossvibrantleather.png",
     "description": "Un mix moderno e giovanile con carattere deciso.",
-    "video_review": "video/Bogoss Vibrant Leather by Zara.mov"
+    "video_review": "https://www.youtube.com/embed/F1dgDKWC7EI"
   },
   {
     "id": 10,
@@ -177,7 +177,7 @@
     "price": "€19,90",
     "image": "img/bondagehommes.png",
     "description": "Fragranza economica con sorprendente intensità.",
-    "video_review": "video/Bondage Hommes di Milton Lloyd.mov"
+    "video_review": "https://www.youtube.com/embed/wWmC9CJX2lI"
   },
   {
     "id": 11,
@@ -195,7 +195,7 @@
     "price": "€59,00",
     "image": "img/detournoir.png",
     "description": "Caldo e seducente, perfetto per l’inverno.",
-    "video_review": "video/Détour Noir di Al Haramain Perfumes.mov"
+    "video_review": "https://www.youtube.com/embed/SOUmlpWYMrQ"
   },
   {
     "id": 12,
@@ -213,7 +213,7 @@
     "price": "€89,00",
     "image": "img/diorhomme.png",
     "description": "Eleganza moderna con un tocco floreale maschile.",
-    "video_review": "video/Dior Homme di Dior.mov"
+    "video_review": "https://www.youtube.com/embed/0n9t2UdYu5Q"
   },
   {
     "id": 13,
@@ -231,7 +231,7 @@
     "price": "€55,00",
     "image": "img/2wood.png",
     "description": "Giovanile e dinamico, ideale per tutti i giorni.",
-    "video_review": "video/Dsquared2 di 2WOOD.mov"
+    "video_review": "https://www.youtube.com/embed/rAriwK7Je-g"
   },
   {
     "id": 14,
@@ -555,7 +555,7 @@
     "price": "€135,00",
     "image": "img/desirtoxic.png",
     "description": "Intenso e misterioso, dal carattere deciso.",
-    "video_review": "video/DesirToxic di M.Micallef.mov"
+    "video_review": "https://www.youtube.com/embed/k92nij9sZVU"
   },
   {
     "id": 32,
@@ -591,7 +591,7 @@
     "price": "€45,00",
     "image": "img/anaabiyedh.png",
     "description": "Pulito, muschiato e avvolgente.",
-    "video_review": "video/Ana Abiyedh di Lattafa Perfumes.mov"
+    "video_review": "https://www.youtube.com/embed/w83Wwhut8bU"
   },
   {
     "id": 34,
@@ -627,7 +627,7 @@
     "price": "€39,90",
     "image": "img/ejaazi.png",
     "description": "Equilibrato e versatile, adatto a ogni occasione.",
-    "video_review": "video/Ejaazi di Lattafa Parfumes.mov"
+    "video_review": "https://www.youtube.com/embed/aWqt_zTQhk4"
   },
   {
     "id": 36,
@@ -699,6 +699,6 @@
     "price": "€49,00",
     "image": "img/assenzio.png",
     "description": "Erbaceo e misterioso, con un carattere unico.",
-    "video_review": "video/Assenzio di L'Erbolario.mov"
+    "video_review": "https://www.youtube.com/embed/KZd2nfdW4-U"
   }
 ]

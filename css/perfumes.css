@@ -375,7 +375,7 @@ footer {
     background-color: var(--background);
 }
 
-/* Descrizione*/
+/* Descrizione */
 .perfume-details h1 { 
     text-align: center;
     font-size: 1.5rem;
@@ -394,7 +394,7 @@ footer {
     margin-top: auto;
 }
 
-/* Note di apertura, centrali e di base*/
+/* Note di apertura, centrali e di base */
 .perfume-details p { 
     text-align: center;
     font-size: 1rem;

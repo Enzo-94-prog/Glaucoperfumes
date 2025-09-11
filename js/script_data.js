@@ -94,7 +94,7 @@ if (document.getElementById("perfume-card")) {
           <p><strong> Note di Base: </strong></p>
           <li>${perfume.base_notes}</li>
 
-        
+          <br></br>
           <p><strong> Genere: </strong>${perfume.genre}</p>
           <p><strong> Durata: </strong>${perfume.longevity}</p>
           <p><strong> Proiezione: </strong>${perfume.projection}</p>

@@ -152,7 +152,7 @@
 
 
 
-/* PARTE 3 – Link, icone, lingua */
+/* PARTE 3 – Link e icone*/
 
 /* Lista link */
 .navbar-links {
@@ -284,12 +284,11 @@ footer {
 /* Card del profumo */
 .perfume-card {
     max-width: 800px;
-    margin: 2rem auto;
+    margin: 1rem auto;
     padding: 2rem;
     border-radius: 10px;
-    border: 6px solid var(--main-green); 
-    background-color: var(--background);
-    
+  /*border: 6px solid var(--main-green); */
+    background-color: var(--background); 
 }
 
 .perfume-card img {

@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       return;
     }
 
-    searchResults.style.display = "block";
+    searchResults.style.display = "block"; // il div appare visibile
 
     // Mostra i risultati
     filtered.forEach(p => {
@@ -44,7 +44,8 @@ document.addEventListener("DOMContentLoaded", async () => {
       item.classList.add("result-item");
       item.innerHTML = `
         <img src="${p.image}" alt="${p.name}">
-        <span>${p.name}</span>
+        <span>${p.name} -&nbsp;</span>
+        <span>${p.brand}</span>
       `;
       searchResults.appendChild(item);
     });

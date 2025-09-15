@@ -22,6 +22,7 @@
                          in css/style.css”. (percorso relativo)-->
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <link href="css/search_bar.css" rel="stylesheet" type="text/css">
+  <link href="css/userPage.css" rel="stylesheet" type="text/css">
   
 
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
@@ -51,7 +52,7 @@
             </a>
 
             <div class="navbar-icons">
-                <a href="user.html"><img src="img/user.svg" alt="user" class="icon-img"></a>
+                <a href="userPage.html"><img src="img/user.svg" alt="user" class="icon-img"></a>
             </div>
 
 
@@ -71,16 +72,30 @@
 
     <!-- Intestazione della pagina -->
     <header>
-        <h1> 
-            Funzione non ancora disponibile
-        </h1>       
+        <h1>Pagina utente</h1>
+        <div id="user-info"></div>
+        <button id="logoutBtn" style="display:none;"> Logout </button> 
     </header>
 
 
-    
     <!-- Sezione principale del contenuto -->
     <main>
+    
+    <section id="auth-section">
+      <h2>Login / Registrazione</h2>
+      <input type="text" id="nickname" placeholder="Nickname (solo registrazione)">
+      <input type="email" id="email" placeholder="Email">
+      <input type="password" id="password" placeholder="Password">
+      <button id="registerBtn"> Registrati </button>
+      <button id="loginBtn"> Login </button>
+    </section>
 
+    <section id="perfumes-section" style="display:none;">
+      <h2>Lista Profumi</h2>
+      <ul id="perfumes-list"></ul>
+      <h2>I tuoi preferiti</h2>
+      <ul id="favorites-list"></ul>
+    </section>
 
     </main>
     
@@ -89,6 +104,11 @@
     <footer>
         &copy; Tutti i marchi, loghi, immagini, testi e altri contenuti presenti su questo sito sono di proprietà dei rispettivi titolari dei diritti. Il presente sito non rivendica alcun diritto su tali contenuti, che vengono utilizzati esclusivamente a scopo informativo o illustrativo.
     </footer>
+
+    <!-- Inclusione degli script -->
+    <!-- in app.js importo Firebase con import { ... } from './firebase.js' per cui
+         lo script va eseguito come modulo ES6 -->
+    <script type="module" src="js/app.js"></script>
 
 </body>
 

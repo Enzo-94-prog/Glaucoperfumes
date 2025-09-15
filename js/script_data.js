@@ -99,12 +99,8 @@ if (document.getElementById("perfume-card")) {
           <p><strong> Durata: </strong>${perfume.longevity}</p>
           <p><strong> Proiezione: </strong>${perfume.projection}</p>
           <p><strong> Stagione: </strong>${perfume.season}</p>
-
-         
+ 
         </div>
-
-
-        
         `;
       }
     } 

@@ -1,7 +1,9 @@
 
 // Funzione per caricare i dati dal JSON
 async function loadPerfumes() {
+  
   const response = await fetch("data/perfumes.json");
+  
   return await response.json();
 }
 
@@ -20,7 +22,6 @@ if (document.getElementById("perfume-list")) {
       <a href="perfume.html?id=${p.id}" class="perfume-card"> 
         
         <div>
-
           <img src="${p.image}" alt="${p.name}" class="perfume-image">
           <h2 class="perfume-title">${p.name}</h2>
           <p class="perfume-meta">${p.brand}</p>

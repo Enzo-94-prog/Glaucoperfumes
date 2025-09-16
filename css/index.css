@@ -78,9 +78,9 @@
 .navbar-logo {
     display: flex;                 /* Permette il corretto allineamento dell'immagine */
     flex: 1;                       /* Prende spazio al centro */
-    align-items: center;          /* Centra verticalmente il logo */
+    align-items: center;           /* Centra verticalmente il logo */
     justify-content: center;       /* centro assoluto */
-    text-decoration: none;        /* Nessuna sottolineatura se è un link */
+    text-decoration: none;         /* Nessuna sottolineatura se è un link */
 }
 
 
@@ -306,42 +306,53 @@ footer {
 /*-------------------------------------------------------------*/
                             /* Carosello profumi */
 
-/* ============================= */
-/* Contenitore principale carosello */
+/* Contenitore principale del carosello */
 .carosello-container {
-    position: relative;
     width: 90%;
     max-width: 1200px;
+    max-height: 400px;
     margin: 40px auto;
-    overflow: hidden;
+    overflow: hidden; /* nasconde le card fuori dal viewport */
     border-radius: 10px;
 }
 
-/* Wrapper che nasconde le card fuori dal viewport */
+/* Wrapper che mantiene visibili solo le card */
 .carosello-wrapper {
     overflow: hidden;
 }
 
 /* Carosello: layout orizzontale con flexbox */
 .carosello {
-    display: flex;
-    transition: transform 0.5s ease;
-    gap: 15px; /* spazio tra le card */
-    padding: 0 10px; /* padding simmetrico ai bordi */
+    display: flex;                 
+    margin: 1rem 0;
+    transition: transform 0.5s linear;
+    gap: 0 15px;                  
+    padding: 0 15px;              
+    cursor: grab;                  
+    will-change: transform;        /* migliora le performance delle animazioni */
+    touch-action: pan-y;           /* permette solo scroll verticale della pagina */
+}
+
+/* Durante il drag */
+.carosello:active {
+    cursor: grabbing;
 }
 
 /* Singola card */
 .carosello-item {
-    flex: 0 0 180px;      /* larghezza fissa, non si riduce */
-    height: 300px;        /* altezza fissa */
+    flex: 0 0 180px;               
     text-align: center;
-    background: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    border-left: 6px solid var(--main-green);
+    background-color: var(--background);
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
 }
 
 /* Hover sulle card */
@@ -352,66 +363,31 @@ footer {
 /* Immagine della card */
 .carosello-item img {
     width: 100%;
-    height: 250px;      /* altezza fissa per uniformità */
-    object-fit: contain;  
+    height: 230px;
+    object-fit: contain;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
 /* Nome del profumo */
 .carosello-item p {
-    padding: 10px;
     font-size: 1em;
     font-weight: bold;
-    color: #333;
+    color: var(--text);
     margin: 0;
     flex-shrink: 0;
 }
 
-/* Pulsanti di navigazione */
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2em;
-    background: rgba(0,0,0,0.3);
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 0 15px;
-    z-index: 10;
-    border-radius: 5px;
-    transition: background 0.3s ease;
+/* Marca del profumo */
+.carosello-meta {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
 }
 
-.prev:hover, .next:hover {
-    background: rgba(0,0,0,0.6);
-}
 
-.prev { left: 5px; }
-.next { right: 5px; }
 
-/* Indicatori puntini */
-.carosello-indicators {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.carosello-indicators span {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin: 0 5px;
-    background-color: #ccc;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.carosello-indicators span.active {
-    background-color: #333;
-}
-
+/*******************************************************************/
 
 
 /* Lista dei profumi */

@@ -87,22 +87,23 @@
         </div>
 
 
-        <!-- Contenitore vuoto in cui verranno inseriti dinamicamente gli ultimi profumi aggiunti sul sito tramite JavaScript 
+    <!-- ************************************************************************* -->
+
+        <!-- Contenitore principale del carosello -->
+        <p style="text-align: center"> Ultime aggiunte🔥</p>
         <div class="carosello-container" id="carosello-container">
-            
-            <button class="prev">&#10094;</button>
-            
-            <div class="carosello-wrapper">
-                <div class="carosello"></div>
+
+        <!-- Wrapper che nasconde le card fuori dal viewport -->
+        <div class="carosello-wrapper">
+            <!-- Carosello che conterrà dinamicamente le card -->
+            <div class="carosello">
+            <!-- Le .carosello-item verranno inserite via JavaScript -->
             </div>
-            
-            <button class="next">&#10095;</button>
-            
-            <div class="carosello-indicators"></div>
-        </div>-->
+        </div>
 
+        </div>
 
-
+    <!-- ************************************************************************* -->
 
         <!-- Contenitore vuoto in cui verranno inseriti dinamicamente i profumi tramite JavaScript -->
         <div class="perfume-list" id="perfume-list"></div>
@@ -116,8 +117,8 @@
     </footer>
 
     
-    <!-- Inclusione degli script 
-    <script src="js/carosello.js" defer ></script> -->
+    <!-- Inclusione degli script -->
+    <script src="js/carosello.js" defer ></script> 
     <script src="js/script_data.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/search_bar.js"></script>

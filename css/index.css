@@ -303,6 +303,116 @@ footer {
 }
 
 
+/*-------------------------------------------------------------*/
+                            /* Carosello profumi */
+
+/* ============================= */
+/* Contenitore principale carosello */
+.carosello-container {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Wrapper che nasconde le card fuori dal viewport */
+.carosello-wrapper {
+    overflow: hidden;
+}
+
+/* Carosello: layout orizzontale con flexbox */
+.carosello {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 15px; /* spazio tra le card */
+    padding: 0 10px; /* padding simmetrico ai bordi */
+}
+
+/* Singola card */
+.carosello-item {
+    flex: 0 0 180px;      /* larghezza fissa, non si riduce */
+    height: 300px;        /* altezza fissa */
+    text-align: center;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Hover sulle card */
+.carosello-item:hover {
+    transform: scale(1.05);
+}
+
+/* Immagine della card */
+.carosello-item img {
+    width: 100%;
+    height: 250px;      /* altezza fissa per uniformità */
+    object-fit: contain;  
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Nome del profumo */
+.carosello-item p {
+    padding: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+/* Pulsanti di navigazione */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    background: rgba(0,0,0,0.3);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0 15px;
+    z-index: 10;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.prev:hover, .next:hover {
+    background: rgba(0,0,0,0.6);
+}
+
+.prev { left: 5px; }
+.next { right: 5px; }
+
+/* Indicatori puntini */
+.carosello-indicators {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.carosello-indicators span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carosello-indicators span.active {
+    background-color: #333;
+}
+
+
 
 /* Lista dei profumi */
 .perfume-list {

@@ -548,7 +548,7 @@
     "image": "img/dylanblue.png",
     "description": "Moderno e sensuale, uno dei best seller Versace.",
     "detailed_description": "Lanciato nel 2016 e creato dal profumiere Alberto Morillas, Dylan Blue di Versace è una fragranza maschile che unisce la freschezza acquatica con la profondità orientale. Le note di bergamotto e pompelmo si mescolano con ambroxan e incenso, creando un profumo potente e versatile, ideale per ogni momento dell'anno.",
-    "video_review": ""
+    "video_review": "https://www.youtube.com/embed/2srxlY7x2ps"
   },
   {
     "id": 30,
@@ -757,7 +757,7 @@
     "image": "img/hala.png",
     "description": "Una fragranza orientale-legnosa con note speziate e affumicate.",
     "detailed_description": "Hala di Lattafa Parfumes è una fragranza legnosa orientale unisex lanciata nel 2022. La sua apertura è energica e speziata con note di pepe e noce moscata. Il cuore rivela un accordo caldo e profondo di cedro e ambra, mentre la base è avvolta da un tocco affumicato di incenso e labdano, che conferisce un carattere misterioso e persistente.",
-    "video_review": ""
+    "video_review": "https://www.youtube.com/embed/XPLa4YXN7bM"
   },
   {
     "id": 41,
@@ -776,6 +776,6 @@
     "image": "img/al_areeq_silver.png",
     "description": "Una fragranza legnosa-cuoiata, elegante e moderna, con un tocco di oud.",
     "detailed_description": "Al Areeq Silver di Lattafa Perfumes, lanciato nel 2022, è una fragranza unisex che unisce la freschezza aromatica di mela, lavanda e cardamomo all’intensità del cuoio, oud e tabacco. La base, con vaniglia, muschio e legno di sandalo, conferisce profondità e peso.",
-    "video_review": ""
+    "video_review": "https://www.youtube.com/embed/MpvliTsMhRQ"
   }
 ]

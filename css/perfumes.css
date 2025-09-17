@@ -214,16 +214,16 @@
     height: 26px;
     display: flex;           /* forza un box coerente */
 
-    /* per debugging */
-    background-color: var(--background); 
+   
 
     align-items: center;     /* centra il contenuto */
     justify-content: center;
     object-fit: contain;     /* riduce l’effetto del padding interno */
     vertical-align: middle;  /* centratura rispetto al testo/linea */
-    
     cursor: pointer;
     transition: opacity 0.2s;
+
+     /* background-color: var(--background); */ /* per debugging */ 
 }
 
 .icon-img:hover {
@@ -361,6 +361,63 @@ footer {
     height: 100%;
     display: block;
 }
+
+
+/*-------------------------------------------------------------*/
+                 /* Pulsante di condivisione */
+
+/* Pulsante di condivisione */
+.share-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 2rem;
+  width: 190px;
+  height: 40px;
+  background-color: var(--white); /* colore base */
+  color: var(--text);
+  border: 2px solid var(--main-green);  /* colore del bordo */            
+  border-radius: 6px;     /* angoli leggermente arrotondati */
+  font-size: 15px;        /* dimensione testo leggibile */
+  gap: 2px; /* spazio tra icona e testo */
+}
+
+.share-button:hover {
+  background-color: var(--background);
+}
+
+.share-icon-button {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.toast {
+  position: fixed;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--background);
+  color: var(--text);
+  padding: 10px 20px;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 9999;
+  width: 300px;            /* larghezza fissa */
+  max-width: 60%;          /* su mobile non supera il 90% della finestra */
+  text-align: center;       /* testo centrato */
+}
+.toast.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
 
 
 /*-------------------------------------------------------------*/

@@ -107,7 +107,7 @@ if (document.getElementById("perfume-card")) {
 
       // Click handler per copiare dati
       shareButton.addEventListener("click", async () => {
-        const textToCopy = `${perfume.name}\nVideo: ${videoLinkNotEmbedded}\nLink: ${window.location.href}`;
+        const textToCopy = `${perfume.name} - ${perfume.brand}\n\nVideo: ${videoLinkNotEmbedded}\n\nLink al sito: ${window.location.href}`;
         try {
           await navigator.clipboard.writeText(textToCopy);
           showToast("Dati copiati negli appunti!");

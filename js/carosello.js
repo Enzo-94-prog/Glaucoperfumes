@@ -1,14 +1,17 @@
-
 // Funzione per caricare i dati dal JSON
 async function loadPerfumes() {
   const response = await fetch("data/perfumes.json");
   return await response.json();
 }
 
-
 if (document.getElementById("carosello-container")) {
   loadPerfumes().then(async perfumes => {
     const carosello = document.querySelector(".carosello");
+    if (!carosello) {
+      console.error("Carosello non trovato!");
+      return;
+    }
+
     const lastPerfumes = perfumes.slice(-10).reverse();
 
     // --- Preload immagini ---
@@ -17,10 +20,11 @@ if (document.getElementById("carosello-container")) {
         const img = new Image();
         img.src = p.image;
         img.onload = resolve;
+        img.onerror = resolve; // evita blocchi se l'immagine manca
       });
     }));
 
-    // --- Inserisci card reali come <a> ---
+    // --- Inserisci card ---
     lastPerfumes.forEach(p => {
       const item = document.createElement("a");
       item.classList.add("carosello-item");
@@ -33,55 +37,57 @@ if (document.getElementById("carosello-container")) {
       carosello.appendChild(item);
     });
 
-    // --- Cloni multipli per scorrimento continuo ---
-    const cloneCount = 3; // numero di card da clonare all'inizio e alla fine
+    // --- Cloni per loop infinito ---
     const items = Array.from(carosello.children);
+    const cloneCount = Math.min(3, items.length); // evita problemi se poche card
 
-    // Cloni iniziali (ultime cloneCount card)
+    // Cloni iniziali
     for (let i = items.length - cloneCount; i < items.length; i++) {
       const clone = items[i].cloneNode(true);
       clone.classList.add("clone");
       carosello.insertBefore(clone, carosello.firstChild);
     }
 
-    // Cloni finali (prime cloneCount card)
+    // Cloni finali
     for (let i = 0; i < cloneCount; i++) {
       const clone = items[i].cloneNode(true);
       clone.classList.add("clone");
       carosello.appendChild(clone);
     }
 
-    const totalItems = carosello.children.length;
-    const itemWidth = 180 + 15; // larghezza card + gap
-    let currentIndex = cloneCount; // partiamo dalla prima reale
+    const allItems = Array.from(carosello.children);
 
-    // Posizione iniziale
+    // --- Calcola dinamicamente la larghezza della card + gap ---
+    const itemStyle = getComputedStyle(allItems[0]);
+    const itemWidth = allItems[0].offsetWidth + parseInt(itemStyle.marginRight);
+
+    let currentIndex = cloneCount;
     carosello.style.transform = `translateX(${-currentIndex * itemWidth}px)`;
 
-    // Aggiorna carosello
+    // Funzione di aggiornamento
     function updateCarousel(transition = true) {
       carosello.style.transition = transition ? "transform 0.5s linear" : "none";
       carosello.style.transform = `translateX(${-currentIndex * itemWidth}px)`;
     }
 
-    // --- Autoplay infinito ---
+    // --- Autoplay ---
     let interval = setInterval(() => {
       currentIndex++;
       updateCarousel();
     }, 3000);
 
-    // --- Loop infinito senza scatti ---
+    // --- Loop infinito ---
     carosello.addEventListener("transitionend", () => {
-      if (currentIndex >= totalItems - cloneCount) {
+      if (currentIndex >= allItems.length - cloneCount) {
         currentIndex = cloneCount;
         updateCarousel(false);
       } else if (currentIndex < cloneCount) {
-        currentIndex = totalItems - cloneCount * 2;
+        currentIndex = allItems.length - cloneCount * 2;
         updateCarousel(false);
       }
     });
 
-    // --- Swipe/drag ---
+    // --- Swipe / Drag ---
     let isDragging = false;
     let startX = 0;
     let scrollStart = 0;
@@ -89,8 +95,18 @@ if (document.getElementById("carosello-container")) {
     const stopAutoplay = () => clearInterval(interval);
     const restartAutoplay = () => interval = setInterval(() => { currentIndex++; updateCarousel(); }, 3000);
 
-    const dragStart = (x) => { isDragging = true; startX = x; scrollStart = -currentIndex * itemWidth; stopAutoplay(); };
-    const dragMove = (x) => { if(!isDragging) return; const dx = x - startX; carosello.style.transition="none"; carosello.style.transform = `translateX(${scrollStart + dx}px)`; };
+    const dragStart = (x) => { 
+      isDragging = true; 
+      startX = x; 
+      scrollStart = -currentIndex * itemWidth; 
+      stopAutoplay(); 
+    };
+    const dragMove = (x) => { 
+      if(!isDragging) return; 
+      const dx = x - startX; 
+      carosello.style.transition = "none"; 
+      carosello.style.transform = `translateX(${scrollStart + dx}px)`; 
+    };
     const dragEnd = (x) => {
       if(!isDragging) return;
       const dx = x - startX;

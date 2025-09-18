@@ -4,6 +4,7 @@
 /* Variabili globali per colori principali */
 :root {
     --main-green: rgb(91, 159, 57);
+    --main-red: rgb(198, 82, 29);
     --background: #f5f9f6;
     --text: #333;
     --white: #fff;
@@ -319,7 +320,7 @@ footer {
 /* Carosello: layout orizzontale con flexbox */
 .carosello {
     display: flex;                 
-    margin: 1rem 0;
+   
     transition: transform 0.5s linear;
     gap: 0 15px;                  
     padding: 0 15px;              
@@ -343,7 +344,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    border-left: 6px solid var(--main-green);
+    border-left: 6px solid var(--main-red);
     background-color: var(--background);
     box-sizing: border-box;
     text-decoration: none;
@@ -358,7 +359,9 @@ footer {
 /* Immagine della card */
 .carosello-item img {
     width: 100%;
-    height: 230px;
+    height: 100px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     object-fit: contain;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -369,7 +372,7 @@ footer {
     font-size: 1em;
     font-weight: bold;
     color: var(--text);
-    margin: 0;
+    margin: auto;
     flex-shrink: 0;
 }
 
@@ -419,10 +422,11 @@ footer {
 /* Immagine preview del profumo */
 .perfume-image {
     width: 180px;           /* larghezza fissa */
-    height: 250px;          /* altezza fissa */
+    height: 180px;          /* altezza fissa */
     object-fit: contain;    /* ridimensiona mantenendo le proporzioni*/
     border-radius: 5px;
     margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 

@@ -14,7 +14,7 @@
     --backgroundIconNavbar: var(--white);
     --backgroundBody: rgb(0, 128, 45);      
     --backgroundHeader: rgb(0, 204, 255); 
-    --backgroundMain: rgb(0, 145, 255);     */   
+    --backgroundMain: rgb(0, 145, 255);      */  
 }
 
 
@@ -320,7 +320,6 @@ footer {
 /* Carosello: layout orizzontale con flexbox */
 .carosello {
     display: flex;                 
-   
     transition: transform 0.5s linear;
     gap: 0 15px;                  
     padding: 0 15px;              

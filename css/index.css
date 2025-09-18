@@ -214,15 +214,10 @@
     width: 26px;
     height: 26px;
     display: flex;           /* forza un box coerente */
-
-    /* per debugging 
-    background-color: var(--background); */
-
     align-items: center;     /* centra il contenuto */
     justify-content: center;
     object-fit: contain;     /* riduce l’effetto del padding interno */
     vertical-align: middle;  /* centratura rispetto al testo/linea */
-
     cursor: pointer;
     transition: opacity 0.2s;
 }

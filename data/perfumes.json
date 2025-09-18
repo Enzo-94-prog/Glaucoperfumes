@@ -795,7 +795,7 @@
   "image": "img/artofarabiayi.png",
   "description": "Orientale e sofisticato, con note calde e avvolgenti.",
   "detailed_description": "Art of Arabia I di Lattafa Perfumes è un profumo unisex dall’anima orientale. Con note speziate in apertura, un cuore fiorito e una base legnosa-ambra, crea una fragranza intensa e persistente, perfetta per chi cerca eleganza e carattere.",
-  "video_review": ""
+  "video_review": "https://www.youtube.com/embed/E9zbCZ1lETE"
   },
   {
   "id": 43,
@@ -814,7 +814,7 @@
   "image": "img/artofarabiayiii.png",
   "description": "Dolce e floreale, con un tocco fruttato raffinato.",
   "detailed_description": "Art of Arabia III di Lattafa Perfumes è una fragranza unisex che unisce dolci note fruttate a un cuore fiorito, sostenuto da una base legnosa e muschiata. Perfetto per chi ama profumi eleganti ma meno intensi.",
-  "video_review": ""
+  "video_review": "https://www.youtube.com/embed/ligu9RP-o_c"
   },
   {
   "id": 44,
@@ -833,7 +833,7 @@
   "image": "img/lunarossacarbon.png",
   "description": "Fresco, moderno e con un tocco metallico elegante.",
   "detailed_description": "Luna Rossa Carbon di Prada è un profumo maschile caratterizzato da fresche note agrumate e un cuore aromatico, con un fondo legnoso e speziato che offre persistenza e modernità.",
-  "video_review": ""
+  "video_review": "https://www.youtube.com/embed/477eDhqNkIo"
   },
   {
   "id": 45,
@@ -852,7 +852,7 @@
   "image": "img/aoudvanille.png",
   "description": "Opulento e avvolgente, con una dolcezza orientale intensa.",
   "detailed_description": "Aoud Vanille di Mancera è una fragranza unisex lussuosa che fonde il prezioso oud con note calde di vaniglia e fiori, creando un profumo sensuale, persistente e sofisticato.",
-  "video_review": ""
+  "video_review": "https://www.youtube.com/embed/kG40XwLz0HY"
   },
   {
   "id": 46,
@@ -871,7 +871,7 @@
   "image": "img/arabianstonka.png",
   "description": "Dolce e avvolgente, con un cuore gourmand speziato.",
   "detailed_description": "Arabians Tonka di Montale è un profumo unisex che combina note dolci di tonka e vaniglia con un fondo legnoso e muschiato, risultando in una fragranza intensa e persistente.",
-  "video_review": ""
+  "video_review": "https://www.youtube.com/embed/jcBgW7AdjtE"
   },
   {
   "id": 47,
@@ -890,7 +890,7 @@
   "image": "img/capri.png",
   "description": "Fresco e frizzante, ricorda l’isola mediterranea.",
   "detailed_description": "Capri di Yodeyma è una fragranza unisex fresca e luminosa, con note agrumate e floreali che evocano la brezza marina e l’atmosfera dell’isola, perfetta per l’estate.",
-  "video_review": ""
+  "video_review": "https://www.youtube.com/embed/SzrDiuBeNSs"
   },
   {
   "id": 48,
@@ -909,7 +909,7 @@
   "image": "img/lacollection1505.png",
   "description": "Elegante e raffinato, dal carattere orientale classico.",
   "detailed_description": "La Collection d'antiquités 1505 di Lattafa Perfumes è una fragranza unisex che unisce note speziate e legnose a un fondo orientale, creando un profumo intenso, elegante e persistente.",
-  "video_review": ""
+  "video_review": "https://www.youtube.com/embed/LTOPl_wCFcw"
   },
   {
   "id": 49,
@@ -928,7 +928,26 @@
   "image": "img/1millionelixir.png",
   "description": "Intenso e seducente, versione più calda del classico 1 Million.",
   "detailed_description": "1 Million Elixir di Paco Rabanne è un profumo maschile intenso, caratterizzato da note dolci e speziate con un fondo ambrato e legnoso. Perfetto per chi cerca un profumo potente e persistente.",
-  "video_review": ""
+  "video_review": "https://www.youtube.com/embed/BA8bEdfhFu4"
+  },
+  {
+  "id": 50,
+  "name": "Legacy Private Edition",
+  "brand": "Cristiano Ronaldo",
+  "category": "Eau de Parfum",
+  "notes": "Spezie orientali, legni, ambra",
+  "top_notes": "Basilico, Neroli, Betulla",
+  "middle_notes": "Cedro, Iris, Fava Tonka",
+  "base_notes": "Vaniglia, Ambra Grigia, Muschio, Sandalo",
+  "genre": "maschile",
+  "longevity": "buona",
+  "projection": "moderata",
+  "season": "Autunno, Inverno",
+  "price": "€45,00",
+  "image": "img/legacyprivateedition.png",
+  "description": "Maschile e raffinato, con un tocco orientale e sensuale.",
+  "detailed_description": "Legacy Private Edition di Cristiano Ronaldo è una fragranza maschile sofisticata e intensa. Con un’apertura fresca ed erbacea, un cuore legnoso e speziato e una base calda di vaniglia e ambra, rappresenta eleganza e carisma.",
+  "video_review": "https://www.youtube.com/embed/X4gClgqfMGI"
   }
 ]
 

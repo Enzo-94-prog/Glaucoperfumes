@@ -1,0 +1,140 @@
+
+<!-- Dichiara il tipo di documento (HTML5) -->
+<!DOCTYPE html>
+
+<!-- Elemento radice della pagina HTML -->
+<html>
+
+<!-- Contiene i metadati e le impostazioni della pagina -->
+<head>
+
+  <!-- Imposta la codifica dei caratteri a UTF-8 -->
+  <meta charset="UTF-8" />
+  
+  <!-- Imposta la viewport per il responsive design sui dispositivi mobili -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Il titolo della pagina che viene mostrato nella scheda del browser -->
+  <title> Glaucoperfumes </title>
+  
+  <!-- Collegamento al file CSS esterno per lo stile della pagina 
+   ./css/... o css/... → significa “parti dalla cartella dove si trova index.html e vai 
+                         in css/style.css”. (percorso relativo)-->
+  <link href="css/index.css" rel="stylesheet" type="text/css">
+  <link href="css/search_bar.css" rel="stylesheet" type="text/css">
+  
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+
+</head>
+
+<!-- Corpo della pagina -->
+<body>
+
+
+    <!-- BARRA DI NAVIGAZIONE PRINCIPALE -->
+    <nav class="navbar">
+
+
+        <!-- Contenitore flessibile che racchiude tutti gli elementi della navbar -->
+        <div class="navbar-container">
+            
+
+            <!-- Pulsante hamburger per aprire o chiudere il menu -->
+            <button class="hamburger" id="hamburger"><span></span></button>
+            
+
+            <!-- Logo cliccabile posizionato al centro -->
+            <a href="https://enzo-94-prog.github.io/Glaucoperfumes/" class="navbar-logo" id="navbar-logo">
+                <img class="logo-img" src="img/logo.png" alt="Glaucoperfumes Logo" >
+            </a>
+
+            <div class="navbar-icons">
+                <a href="#"><img src="img/user.svg" class="icon-img" alt="user" ></a>
+            </div>
+
+
+            <!-- Elenco dei link di navigazione  -->
+            <ul class="navbar-links" id="navbar-links">
+                <li><a href="#" class="nav-item" data-key="shop"> Opzione 1 (non disponibile) </a></li>
+                <li><a href="#" class="nav-item" data-key="about"> Opzione 2 (non disponibile) </a></li>
+                <li><a href="#" class="nav-item" data-key="stories"> Opzione 3 (non disponibile) </a></li>
+                <li><a href="#" class="nav-item" data-key="club"> Opzione 4 (non disponibile) </a></li>
+            </ul>
+    
+
+        </div>
+
+    </nav>
+
+
+    <!-- Intestazione della pagina -->
+    <header>
+        <h1 class="intro-text"> 
+            "Scegliere un profumo è come scegliere un'emozione da indossare ogni giorno" 
+        </h1>       
+    </header>
+
+
+    
+    <!-- Sezione principale del contenuto -->
+    <main>
+
+                <!-- Barra di ricerca -->
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Cerca un profumo o brand...">
+                <div id="searchResults" class="results-container"></div>
+        </div>
+
+
+    <!-- ************************************************************************* -->
+
+        <!-- Contenitore principale del carosello -->
+        <p style="text-align: center"> ULTIME AGGIUNTE!! 🔥</p>
+        <div class="carosello-container" id="carosello-container">
+
+        <!-- Wrapper che nasconde le card fuori dal viewport -->
+        <div class="carosello-wrapper">
+            <!-- Carosello che conterrà dinamicamente le card -->
+            <div class="carosello">
+            <!-- Le .carosello-item verranno inserite via JavaScript -->
+            </div>
+        </div>
+
+        </div>
+
+    <!-- ************************************************************************* -->
+
+        <!-- Contenitore vuoto in cui verranno inseriti dinamicamente i profumi tramite JavaScript -->
+        <div class="perfume-list" id="perfume-list"></div>
+
+    </main>
+    
+
+  <!-- Piè di pagina con informazioni di copyright -->
+    <footer>
+        &copy; Tutti i marchi, loghi, immagini, testi e altri contenuti presenti su questo sito sono di proprietà dei rispettivi titolari dei diritti. Il presente sito non rivendica alcun diritto su tali contenuti, che vengono utilizzati esclusivamente a scopo informativo o illustrativo.
+    </footer>
+
+    
+    <!-- Inclusione degli script -->
+    <script src="js/carosello.js" defer ></script> 
+    <script src="js/script_data.js"></script>
+    <!--<script src="js/navbar.js"></script> -->
+    <script src="js/search_bar.js"></script>
+
+    <!-- 
+                                   - Regola generale -
+
+    /percorso/file = percorso assoluto a partire dalla root del dominio.
+
+    ./percorso/file (o semplicemente percorso/file) = percorso relativo rispetto alla 
+                                                      cartella dell’index.html.
+
+    Nel mio caso devo sempre usare percorsi relativi (./js/..., ./css/..., ./img/...), 
+    perché il sito è ospitato in una subdirectory del dominio.
+    -->
+    
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+
+<!-- Dichiara il tipo di documento (HTML5) -->
+<!DOCTYPE html>
+
+<!-- Elemento radice della pagina HTML -->
+<html>
+
+<!-- Contiene i metadati e le impostazioni della pagina -->
+<head>
+
+  <!-- Imposta la codifica dei caratteri a UTF-8 -->
+  <meta charset="UTF-8" />
+  
+  <!-- Imposta la viewport per il responsive design sui dispositivi mobili -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Il titolo della pagina che viene mostrato nella scheda del browser -->
+  <title> Glaucoperfumes </title>
+  
+  <!-- Collegamento al file CSS esterno per lo stile della pagina -->
+  <link href="css/perfumes.css" rel="stylesheet" type="text/css">
+
+  <!-- Risolvono le incompatibilità relative al favicon -->
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" sizes="180x180" >
+
+
+</head>
+
+<!-- Corpo della pagina -->
+<body>
+
+
+    <!-- Barra di navigazione principale -->
+    <nav class="navbar">
+
+
+        <!-- Contenitore flessibile che racchiude tutti gli elementi della navbar -->
+        <div class="navbar-container">
+            
+
+            <!-- Pulsante hamburger visibile in modalità mobile per aprire o chiudere il menu -->
+            <button class="hamburger" id="hamburger"><span></span></button>
+            
+
+            <!-- Logo cliccabile posizionato al centro -->
+            <a href="https://enzo-94-prog.github.io/Glaucoperfumes/" class="navbar-logo" id="navbar-logo">
+                <img src="img/logo.png" alt="Glaucoperfumes Logo" class="logo-img">
+            </a>
+
+
+            <div class="navbar-icons">
+                <a href="#"><img src="img/user.svg" alt="user" class="icon-img"></a>
+            </div>
+
+
+            <!-- Elenco dei link di navigazione  -->
+            <ul class="navbar-links" id="navbar-links">
+                <li><a href="#" class="nav-item" data-key="shop"> Opzione 1 (non disponibile) </a></li>
+                <li><a href="#" class="nav-item" data-key="about"> Opzione 2 (non disponibile) </a></li>
+                <li><a href="#" class="nav-item" data-key="stories"> Opzione 3 (non disponibile) </a></li>
+                <li><a href="#" class="nav-item" data-key="club"> Opzione 4 (non disponibile) </a></li>
+            </ul>
+
+        </div>
+
+    </nav>
+    
+
+    <!-- Sezione principale del contenuto  
+    -->
+    <main>
+
+        <!-- Contenitore vuoto in cui verrà inserito dinamicamente il profumo tramite JavaScript -->
+        <div id="perfume-card"></div>
+            
+        <!-- Contenitore vuoto in cui verrà inserita dinamicamente la videorecensione tramite JavaScript -->
+        <div class="video-container" id="video-container"></div>
+       
+        <!-- Contenitore vuoto in cui verrà inserita dinamicamente la descrizione del profumo tramite JavaScript -->
+        <div class="perfume-details" id="perfume-details"></div>
+
+       
+    <!-- ************************************************************************* -->
+
+    </main>
+    
+
+
+    <!-- Piè di pagina con informazioni di copyright -->
+    <footer>
+        &copy; Tutti i marchi, loghi, immagini, testi e altri contenuti presenti su questo sito sono di proprietà dei rispettivi titolari dei diritti. Il presente sito non rivendica alcun diritto su tali contenuti, che vengono utilizzati esclusivamente a scopo informativo o illustrativo.
+    </footer>
+
+
+    
+
+    <!-- Inclusione degli script -->
+    <script src="js/script_data.js"></script>
+    <!--<script src="js/navbar.js"></script> -->
+    
+    
+</body>
+
+</html>

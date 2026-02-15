@@ -1,0 +1,115 @@
+
+<!-- Dichiara il tipo di documento (HTML5) -->
+<!DOCTYPE html>
+
+<!-- Elemento radice della pagina HTML -->
+<html>
+
+<!-- Contiene i metadati e le impostazioni della pagina -->
+<head>
+
+  <!-- Imposta la codifica dei caratteri a UTF-8 -->
+  <meta charset="UTF-8" />
+  
+  <!-- Imposta la viewport per il responsive design sui dispositivi mobili -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Il titolo della pagina che viene mostrato nella scheda del browser -->
+  <title> Glaucoperfumes </title>
+  
+  <!-- Collegamento al file CSS esterno per lo stile della pagina 
+   ./css/... o css/... → significa “parti dalla cartella dove si trova index.html e vai 
+                         in css/style.css”. (percorso relativo)-->
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/search_bar.css" rel="stylesheet" type="text/css">
+  <link href="css/userPage.css" rel="stylesheet" type="text/css">
+  
+
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="favicon-fp.ico">
+
+</head>
+
+<!-- Corpo della pagina -->
+<body>
+
+
+    <!-- BARRA DI NAVIGAZIONE PRINCIPALE -->
+    <nav class="navbar">
+
+        
+        <!-- Contenitore flessibile che racchiude tutti gli elementi della navbar -->
+        <div class="navbar-container">
+            
+
+            <!-- Pulsante hamburger per aprire o chiudere il menu -->
+            <button class="hamburger" id="hamburger"><span></span></button>
+            
+
+            <!-- Logo cliccabile posizionato al centro -->
+            <a href="https://enzo-94-prog.github.io/Glaucoperfumes/" class="navbar-logo" id="navbar-logo">
+                <img src="img/logo.png" alt="Glaucoperfumes Logo" class="logo-img">
+            </a>
+
+            <div class="navbar-icons">
+                <a href="userPage.html"><img src="img/user.svg" alt="user" class="icon-img"></a>
+            </div>
+
+
+            <!-- Elenco dei link di navigazione  -->
+            <ul class="navbar-links" id="navbar-links">
+                <li><a href="#" class="nav-item" data-key="shop"> Opzione 1 (non disponibile) </a></li>
+                <li><a href="#" class="nav-item" data-key="about"> Opzione 2 (non disponibile) </a></li>
+                <li><a href="#" class="nav-item" data-key="stories"> Opzione 3 (non disponibile) </a></li>
+                <li><a href="#" class="nav-item" data-key="club"> Opzione 4 (non disponibile) </a></li>
+            </ul>
+    
+
+        </div>
+
+    </nav>
+
+
+    <!-- Intestazione della pagina -->
+    <header>
+        <h1>Pagina utente</h1>
+        <div id="user-info"></div>
+        <button id="logoutBtn" style="display:none;"> Logout </button> 
+    </header>
+
+
+    <!-- Sezione principale del contenuto -->
+    <main>
+    
+    <section id="auth-section">
+      <h2>Login / Registrazione</h2>
+      <input type="text" id="nickname" placeholder="Nickname (solo registrazione)">
+      <input type="email" id="email" placeholder="Email">
+      <input type="password" id="password" placeholder="Password">
+      <button id="registerBtn"> Registrati </button>
+      <button id="loginBtn"> Login </button>
+    </section>
+
+    <section id="perfumes-section" style="display:none;">
+      <h2>Lista Profumi</h2>
+      <ul id="perfumes-list"></ul>
+      <h2>I tuoi preferiti</h2>
+      <ul id="favorites-list"></ul>
+    </section>
+
+    </main>
+    
+
+  <!-- Piè di pagina con informazioni di copyright -->
+    <footer>
+        &copy; Tutti i marchi, loghi, immagini, testi e altri contenuti presenti su questo sito sono di proprietà dei rispettivi titolari dei diritti. Il presente sito non rivendica alcun diritto su tali contenuti, che vengono utilizzati esclusivamente a scopo informativo o illustrativo.
+    </footer>
+
+    <!-- Inclusione degli script -->
+    <!-- in app.js importo Firebase con import { ... } from './firebase.js' per cui
+         lo script va eseguito come modulo ES6 -->
+    <script type="module" src="js/app.js"></script>
+
+</body>
+
+</html>

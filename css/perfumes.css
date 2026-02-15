@@ -1,0 +1,475 @@
+
+/* PARTE 1 – Variabili, Navbar, Hamburger menu */
+
+/* Variabili globali per colori principali */
+:root {
+    --main-green: rgb(91, 159, 57);
+    --background: #f5f9f6;
+    --text: #333;
+    --white: #fff;
+    --gray: #ccc;
+    
+      /* per debugging 
+    --backgroundIconNavbar: var(--white);
+    --backgroundBody: rgb(0, 128, 45);      
+    --backgroundHeader: rgb(0, 204, 255); 
+    --backgroundMain: rgb(0, 145, 255);    */  
+}
+
+/* Stile principale della barra di navigazione (navbar): */
+.navbar {
+    display: flex;
+    justify-content: center;    /* centro contenitore */
+    align-items: center;
+    padding: 1rem;
+    flex-wrap: nowrap;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(25px);
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+
+/* Quando la navbar ha la classe 'menu-open' (menu aperto),
+   imposta lo sfondo bianco pieno e rimuove l'effetto di sfocatura (blur).
+   L'uso di !important assicura che il backdrop-filter venga disattivato,
+   sovrascrivendo eventuali altre regole CSS. */
+.navbar.menu-open {
+    background-color: #fff;
+    backdrop-filter: none !important;
+}
+
+
+
+/* PARTE 2 – Struttura della navbar e hamburger */
+
+/* Contenitore interno della navbar */
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* distribuisce hamburger e icone:
+                                       hamburger a sinistra, logo al centro, icone a destra */
+    width: 100%;
+}
+
+
+/* Ordine degli elementi */
+.hamburger {
+    order: 1; /* a sinistra */
+}
+
+.navbar-logo {
+    order: 2;          /* al centro */
+}
+
+.navbar-icons {
+    order: 3;              /* a destra */
+    margin-left: auto;     /* spinge le icone a destra */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+/* Stile per il logo nella navbar */
+.navbar-logo {
+    display: flex;                 /* Permette il corretto allineamento dell'immagine */
+    flex: 1;                       /* Prende spazio al centro */
+    align-items: center;          /* Centra verticalmente il logo */
+    justify-content: center;       /* centro assoluto */
+    text-decoration: none;        /* Nessuna sottolineatura se è un link */
+}
+
+
+/* Stile per l'immagine del logo PNG */
+.logo-img {
+    height: 3rem;            /* Altezza ottimale (≈ 40px) adattabile con unità relative */
+    width: auto;             /* Mantiene le proporzioni dell'immagine */
+    transform: scale(3.5);     /* Ingrandisce visivamente */
+    max-height: 100%;        /* Non sfora mai dal container */
+    display: block;          /* Elimina spazi indesiderati */
+    object-fit: contain;     /* Mantiene l'integrità del logo */
+}
+
+
+/* Stile per il pulsante hamburger (icona menu) */
+.hamburger {
+    position: relative;
+    width: 30px;
+    height: 22px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--text);
+    margin-right: 1rem;
+}
+
+
+/* Linee hamburger */
+.hamburger::before,
+.hamburger::after,
+.hamburger span {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--text);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.hamburger span {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hamburger::before {
+    top: 0;
+}
+
+.hamburger::after {
+    bottom: 0;
+}
+
+
+/* Trasformazione in X */
+.hamburger.active::before {
+    transform: rotate(45deg);
+    top: 50%;
+}
+
+.hamburger.active::after {
+    transform: rotate(-45deg);
+    bottom: 50%;
+}
+
+.hamburger.active span {
+    opacity: 0;
+}
+
+
+
+/* PARTE 3 – Link e icone*/
+
+/* Lista link */
+.navbar-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 70%;
+    background-color: var(--white);
+    flex-direction: column;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+    list-style: none;
+    gap: 1rem;
+    margin: 0;
+}
+
+.navbar-links.active {
+    display: flex;
+}
+
+.navbar-links li {
+    width: 100%;
+    text-align: left;
+}
+
+
+/* Link */
+.navbar-links li a {
+    text-decoration: none !important;
+    color: var(--text) !important;
+    position: relative;
+}
+
+.navbar-links li a:hover {
+    color: var(--main-green);
+}
+
+.navbar-links li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--main-green);
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar-links li a:hover::after {
+    width: 100%;
+}
+
+
+/* Icone */
+.icon-img {
+    width: 26px;
+    height: 26px;
+    display: flex;           /* forza un box coerente */
+
+   
+
+    align-items: center;     /* centra il contenuto */
+    justify-content: center;
+    object-fit: contain;     /* riduce l’effetto del padding interno */
+    vertical-align: middle;  /* centratura rispetto al testo/linea */
+    cursor: pointer;
+    transition: opacity 0.2s;
+
+     /* background-color: var(--background); */ /* per debugging */ 
+}
+
+.icon-img:hover {
+    opacity: 0.7;
+}
+
+
+/* PARTE 5 – Stili di base per l'header, il body e il main della pagina */
+
+header {
+    background-color: var(--backgroundHeader); /* per debugging */
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-style: italic;
+    font-size: 1.4rem;
+    color: var(--text);
+}
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text);
+    line-height: 1.6;
+    
+    background-color: var(--backgroundBody); /* per debugging */
+}
+
+
+main {
+    max-width: 1100px;
+    align-items: center;
+    margin: 2rem auto;
+    margin-top: 0; 
+    padding: 0.5rem;
+    
+    background-color: var(--backgroundMain);  /* per debugging */
+}
+
+
+/* Footer sempre in basso e centrato */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--white); /* colore sfondo chiaro */
+    font-size: 0.9rem;
+    color: #333;
+}
+
+
+/* ---------------------------------------------------------- */
+
+
+/* Card del profumo */
+.perfume-card {
+    max-width: 800px;
+    margin: 1rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+  /*border: 6px solid var(--main-green); */
+    background-color: var(--background); 
+}
+
+.perfume-card img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.perfume-card h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.perfume-card p, li {
+    text-align: center;
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Immagine preview del profumo */
+.perfume-image {
+    width: 100%;
+    max-width: 180px;       /* massima larghezza per coerenza */
+    height: auto;           /* altezza automatica per mantenere proporzioni */
+    object-fit: contain;    /* mantiene proporzioni */
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+
+/* Nome del profumo */
+.perfume-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+}
+
+
+/* Marca del profumo */
+.perfume-meta {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* ---------------------------------------------------------- */
+
+/* Contenitore del video fuori dalla card */
+.video-container {
+    position: relative;
+    width: 100%;           /* occupa tutta la larghezza disponibile */
+    max-width: 800px;      /* stessa max-width della card */
+    margin: 1.5rem auto;   /* centrato e separato dalla card */
+    padding-top: 56.25%;   /* rapporto 16:9 */
+    overflow: hidden;
+    box-sizing: border-box; /* include eventuali padding nei calcoli */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+/*-------------------------------------------------------------*/
+                 /* Pulsante di condivisione */
+
+/* Pulsante di condivisione */
+.share-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 2rem;
+  width: 190px;
+  height: 40px;
+  background-color: var(--white); /* colore base */
+  color: var(--text);
+  border: 2px solid var(--main-green);  /* colore del bordo */            
+  border-radius: 6px;     /* angoli leggermente arrotondati */
+  font-size: 15px;        /* dimensione testo leggibile */
+  gap: 2px; /* spazio tra icona e testo */
+}
+
+.share-button:hover {
+  background-color: var(--background);
+}
+
+.share-icon-button {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.toast {
+  position: fixed;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--background);
+  color: var(--text);
+  padding: 10px 20px;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 9999;
+  width: 300px;            /* larghezza fissa */
+  max-width: 60%;          /* su mobile non supera il 90% della finestra */
+  text-align: center;       /* testo centrato */
+}
+.toast.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+
+
+/*-------------------------------------------------------------*/
+
+                            /* Dettagli del profumo */
+/* Container */
+.perfume-details {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: var(--background);
+}
+
+/* Descrizione */
+.perfume-details h1 { 
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Descrizione dettagliata del profumo */
+.perfume-details h2 { 
+    text-align: justify;
+    font-size: 1rem;
+    font-weight: normal;   /* rimuove il grassetto */
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    margin-top: auto;
+}
+
+/* Note di apertura, centrali e di base */
+.perfume-details p { 
+    text-align: center;
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    margin-top: auto;
+}
+
+/* Note */
+.perfume-details li {        
+    text-align: center;
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+    list-style-type: none; /* rimuove il pallino */
+}
+
+
+

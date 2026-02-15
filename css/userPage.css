@@ -1,0 +1,131 @@
+
+
+/* Variabili globali per colori principali */
+:root {
+    --main-green: rgb(91, 159, 57);
+    --background: #f5f9f6;
+    --text: #333;
+    --white: #fff;
+    --gray: #ccc;
+    
+      /* per debugging 
+    --backgroundIconNavbar: var(--white);
+    --backgroundBody: rgb(0, 128, 45);      
+    --backgroundHeader: rgb(0, 204, 255); 
+    --backgroundMain: rgb(0, 145, 255);    */  
+}
+
+
+
+
+header {
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+header h1,h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+#user-info {
+  font-weight: bold;
+}
+
+#logoutBtn {
+  padding: 5px 12px;
+  border: none;
+  background-color: #00796b;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+#logoutBtn:hover {
+  background-color: #004d40;
+}
+
+/* ========================
+   SEZIONI
+======================== */
+section {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* ========================
+   INPUT & BOTTONI
+======================== */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 6px 14px;
+  margin: 2px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+#registerBtn, #loginBtn {
+  background-color: #00796b;
+  color: white;
+}
+
+#registerBtn:hover, #loginBtn:hover {
+  background-color: #004d40;
+}
+
+/* ========================
+   LISTE PROFUMI
+======================== */
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+  border-bottom: 1px solid #eee;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li button {
+  background-color: #ff9800;
+  color: white;
+}
+
+li button:hover {
+  background-color: #e65100;
+}
+
+/* ========================
+   PREFERITI
+======================== */
+#favorites-list li {
+  background-color: #e0f2f1;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+#favorites-list li:last-child {
+  margin-bottom: 0;
+}

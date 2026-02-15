@@ -1,0 +1,57 @@
+
+/* Stile Barra di ricerca */
+
+/* Contenitore della barra di ricerca */
+.search-bar {
+  position: relative;
+  max-width: 400px;
+  margin: auto; /* centrato orizzontalmente */
+}
+
+/* Input della ricerca */
+#searchInput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Contenitore dei risultati */
+.results-container {
+  position: absolute;
+  top: 100%; /* subito sotto la barra */
+  left: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-height: 250px; /* scroll se troppi risultati */
+  overflow-y: auto;
+  display: none; /* nascosto di default */
+  z-index: 1000; /* sopra altri elementi */
+}
+
+/* Ogni singolo risultato */
+.result-item {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  text-decoration: none;
+  color: inherit; /* mantiene colore testo */
+  transition: background 0.2s;
+}
+
+/* Immagine del profumo */
+.result-item img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+/* Effetto hover sul risultato */
+.result-item:hover {
+  background: #f3f3f3;
+}

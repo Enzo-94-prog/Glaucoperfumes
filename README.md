@@ -34,13 +34,10 @@ The project was mainly focused on structuring a complete front-end application a
 
 To quickly understand how the application works, these are the most relevant parts of the codebase:
 
-* Dynamic rendering and dataset handling → `js/script_data.js`
-* Search functionality → `js/search_bar.js`
-* UI interaction (navigation behaviour) → `js/navbar.js`
-* Data model used as a backend simulation → `data/perfumes.json`
-
-These files contain the main application logic.
-HTML and CSS mainly define layout and styling, while the JavaScript layer generates and updates the content dynamically.
+- Dynamic rendering and dataset handling → [js/script_data.js](js/script_data.js)
+- Search functionality → [js/search_bar.js](js/search_bar.js)
+- UI interaction (navigation behaviour) → [js/navbar.js](js/navbar.js)
+- Data model used as a backend simulation → [data/perfumes.json](data/perfumes.json)
 
 ---
 

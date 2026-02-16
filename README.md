@@ -201,7 +201,7 @@ This project is for educational and portfolio purposes only and is not affiliate
 
 ## Author
 
-Enzo Marcone — Computer Science graduate interested in Front-End Development and Web Technologies.
+Enzo Marcone — Information Technology for Digital Companies graduate interested in Front-End Development and Web Technologies.
 
 ---
 

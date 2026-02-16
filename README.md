@@ -1,9 +1,20 @@
-# GlaucoPerfumes
+# Glaucoperfumes
 
-A small front-end web application to explore perfumes through a searchable catalog and detailed fragrance pages.
+A front-end web application that simulates a small product catalog website for perfumes.
 
-**Live demo:**
+The project was developed entirely with **HTML, CSS and Vanilla JavaScript**, without frameworks, to demonstrate core front-end development skills: DOM manipulation, dynamic rendering and responsive layout design.
+
+**Live demo**
 https://enzo-94-prog.github.io/Glaucoperfumes/
+
+---
+
+## Project Overview
+
+Glaucoperfumes is not a static showcase.
+The catalog and product pages are generated dynamically using JavaScript and a local dataset.
+
+The goal was to structure a complete front-end project as if it were connected to a real backend API, focusing on application logic rather than only visual layout.
 
 ---
 
@@ -16,39 +27,6 @@ https://enzo-94-prog.github.io/Glaucoperfumes/
 <p align="center">
   <img src="docs/home-2.png" alt="Catalog section" width="900">
 </p>
-
----
-
-## What this project is
-
-GlaucoPerfumes is a personal project built to simulate a simple product platform.
-
-Users can browse a catalog of fragrances, open a dedicated page for each perfume and inspect its olfactory pyramid (top, middle and base notes).
-The site is not a static showcase: most of the content is generated dynamically and behaves similarly to a small catalog website.
-
-The project was mainly focused on structuring a complete front-end application and organizing it in a way that could later be connected to a real backend.
-
----
-
-## Key files to review
-
-To quickly understand how the application works, these are the most relevant parts of the codebase:
-
-- Dynamic rendering and dataset handling → [js/script_data.js](js/script_data.js)
-- Search functionality → [js/search_bar.js](js/search_bar.js)
-- UI interaction (navigation behaviour) → [js/navbar.js](js/navbar.js)
-- Data model used as a backend simulation → [data/perfumes.json](data/perfumes.json)
-
----
-
-## What you can do
-
-* Browse a perfume catalog
-* Open a detail page for each fragrance
-* View the full notes pyramid
-* Search perfumes by name
-* Watch embedded video reviews (when available)
-* Navigate both mobile and desktop layouts
 
 ---
 
@@ -68,7 +46,43 @@ To quickly understand how the application works, these are the most relevant par
 
 ---
 
-## Try it locally
+## Main Features
+
+* Dynamic catalog rendering from dataset
+* Individual product pages
+* Search by perfume name
+* Olfactory pyramid visualization (top, heart and base notes)
+* Embedded video reviews (when available)
+* Homepage carousel (featured perfumes)
+* Responsive layout (mobile and desktop)
+
+---
+
+## Technologies Used
+
+* **HTML5** — semantic page structure
+* **CSS3** — layout organization and responsive design
+* **Vanilla JavaScript** — DOM manipulation and interaction logic
+* **JSON dataset** — backend simulation
+
+No external libraries or frameworks were used intentionally in order to work directly with browser APIs.
+
+---
+
+## What I Learned
+
+During this project I improved my ability to:
+
+* design a multi-page website from scratch
+* separate structure, styling and logic
+* dynamically update the DOM
+* organize a maintainable codebase
+* simulate how a front-end consumes backend data
+* manage responsive behaviour across devices
+
+---
+
+## How to Run Locally
 
 You can run the project with any static server.
 
@@ -87,95 +101,82 @@ http://localhost:8000
 
 ---
 
-## Table of contents
+# Technical Documentation
 
-* [Project idea](#project-idea)
-* [Tech stack](#tech-stack)
-* [Backend simulation via JSON](#backend-simulation-via-json)
-* [Project structure](#project-structure)
-* [Design choices](#design-choices)
-* [Roadmap](#roadmap)
-* [Disclaimer](#disclaimer)
-* [Final notes](#final-notes)
-* [License](#license)
+## Key Files to Review
 
----
+To quickly understand the architecture, these are the most relevant parts of the codebase:
 
-## Project idea
-
-The goal of the project was to focus on front-end fundamentals rather than frameworks.
-
-Instead of relying on a library, the application loads data, updates the DOM and reacts to user interaction using plain JavaScript.
-The codebase is separated into data, rendering logic and UI interaction, making it easier to maintain and ready for a future API integration.
+* Dynamic rendering and dataset handling → [js/script_data.js](js/script_data.js)
+* Search functionality → [js/search_bar.js](js/search_bar.js)
+* UI interaction (navigation behaviour) → [js/navbar.js](js/navbar.js)
+* Homepage carousel logic → [js/carosello.js](js/carosello.js)
+* Data model used as a backend simulation → [data/perfumes.json](data/perfumes.json)
 
 ---
 
-## Tech stack
+## Backend Simulation via JSON
 
-* HTML5 (semantic structure)
-* CSS3 (layout and responsive design)
-* Vanilla JavaScript (logic and interaction)
-* JSON dataset (`data/perfumes.json`)
+The project does not include a real backend.
 
-No frameworks were used intentionally, in order to work directly with the DOM and understand the mechanisms that frameworks usually abstract.
+All product data is stored in `data/perfumes.json`.
+JavaScript reads the dataset and uses it to render the catalog, generate product pages and handle search.
 
----
-
-## Backend simulation via JSON
-
-The project does not include a real backend yet.
-
-To avoid a purely static website, all product data is stored inside `perfumes.json`.
-JavaScript reads the dataset and uses it to render the catalog, generate the detail page and handle search.
-
-In practice the JSON file acts as a small local database.
-
-This mirrors how a frontend normally consumes an API, so the same logic could later fetch data from a server with minimal changes.
-
-The idea was to first build a solid understanding of client-side rendering and state handling, then extend the project with server-side technologies.
+In practice, the JSON file acts as a small local database.
+The same logic could later fetch data from an API with minimal changes.
 
 ---
 
-## Project structure
+## Project Structure
 
-```
+```text
 Glaucoperfumes/
 │
 ├── index.html
 ├── perfume.html
+├── userPage.html
 │
 ├── data/
 │   └── perfumes.json
 │
 ├── js/
-│   ├── main.js
-│   ├── render.js
-│   └── search.js
+│   ├── script_data.js
+│   ├── search_bar.js
+│   ├── navbar.js
+│   └── carosello.js
 │
 ├── css/
-│   └── style.css
+│   ├── index.css
+│   ├── perfumes.css
+│   ├── search_bar.css
+│   └── userPage.css
 │
 ├── img/
-│   └── bottle.png
+│   ├── logo.png
+│   ├── favicon.ico
+│   └── ...
 │
 └── docs/
     ├── home-1.png
-    └── home-2.png
+    ├── home-2.png
+    ├── perfume-1.png
+    ├── perfume-2.png
+    └── perfume-3.png
 ```
 
 ---
 
-## Design choices
+## Design Choices
 
 **JSON-driven catalog**
 Adding a perfume only requires inserting a new object into the dataset. No HTML duplication is needed.
 
 **No framework**
-The purpose is to demonstrate understanding of DOM manipulation, events and rendering logic before relying on tools that automate them.
+The project intentionally avoids frameworks to demonstrate understanding of DOM events, rendering logic and state handling.
 
 **Placeholder images**
 Official product photos are copyrighted marketing assets.
-To keep the repository publicly shareable, each item uses a project-owned placeholder image (`img/bottle.png`).
+To keep the repository publicly shareable, each item uses project-owned placeholders.
 
 ---
 
@@ -183,11 +184,11 @@ To keep the repository publicly shareable, each item uses a project-owned placeh
 
 Possible future improvements:
 
-* Filtering by brand or fragrance family
-* Favorites using LocalStorage
-* Pagination or lazy loading
-* Replace JSON with a real API
-* User accounts and reviews
+* filtering by brand or fragrance family
+* favorites using LocalStorage
+* pagination or lazy loading
+* replacing JSON with a real API
+* user accounts and reviews
 
 ---
 
@@ -198,19 +199,12 @@ This project is for educational and portfolio purposes only and is not affiliate
 
 ---
 
-## Final notes
+## Author
 
-The repository is intended to show project organization and reasoning, not only visual layout.
-
-The most relevant files for review are:
-
-* `data/perfumes.json` (data model)
-* `js/` (rendering and search logic)
-* `css/style.css` (responsive layout)
+Enzo Marcone — Computer Science graduate interested in Front-End Development and Web Technologies.
 
 ---
 
 ## License
 
 This project is licensed under the MIT License.
-A `LICENSE` file containing the full text is included in the repository.

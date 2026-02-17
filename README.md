@@ -1,4 +1,7 @@
 # Glaucoperfumes
+A responsive perfume discovery web application built with HTML, CSS and Vanilla JavaScript.
+
+![Glaucoperfumes preview](preview/social-preview.png)
 
 A front-end web application that simulates a small product catalog website for perfumes.
 
@@ -25,7 +28,7 @@ The goal was to structure a complete front-end project as if it were connected t
 </p>
 
 <p align="center">
-  <img src="docs/home-2.png" alt="Catalog section" width="900">
+  <img src="docs/home-2.png" alt="Home hero section" width="900">
 </p>
 
 ---
@@ -155,7 +158,11 @@ Glaucoperfumes/
 │   ├── logo.png
 │   ├── favicon.ico
 │   └── ...
-│
+|
+├── preview/
+│   └── social_preview.png
+│   
+│   
 └── docs/
     ├── home-1.png
     ├── home-2.png

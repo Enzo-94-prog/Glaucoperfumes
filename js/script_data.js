@@ -54,17 +54,23 @@ if (document.getElementById("perfume-card")) {
     `;
 
     // Gestione video
-    let videoLink = "";
     let videoLinkNotEmbedded = "";
+    let videoLink = ""; // conterrà il link corretto per l'incorporamento
+
     if (videoContainer && perfume.video_review) {
-      videoLink = perfume.video_review;
-      videoLinkNotEmbedded = embedToYoutubeUrl(videoLink);
-      const iframe = document.createElement("iframe");
-      iframe.src = videoLink;
-      iframe.title = "Video recensione di " + perfume.name;
-      iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
-      iframe.allowFullscreen = true;
-      videoContainer.appendChild(iframe);
+      videoLinkNotEmbedded = perfume.video_review;
+      videoLink = YoutubeUrlToEmbed(videoLinkNotEmbedded);
+    
+      if (videoLink) { // controlla che sia un URL valido
+        const iframe = document.createElement("iframe");
+        iframe.src = videoLink;
+        iframe.title = "Video recensione di " + perfume.name;
+        iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+        iframe.allowFullscreen = true;
+        videoContainer.appendChild(iframe);
+      } else {
+        console.warn("URL video non valido:", videoLinkNotEmbedded);
+      }
     }
 
     // Popolo la descrizione
@@ -136,16 +142,44 @@ function showToast(message) {
 }
 
 /* --------------------------------------------------------------------- */
-// Converte youtube embed in link classico
-function embedToYoutubeUrl(embedUrl) {
+// Converte un url youtube in url embed
+function YoutubeUrlToEmbed (url) {
   try {
-    const url = new URL(embedUrl);
-    if (!url.hostname.includes("youtube.com")) return embedUrl;
-    const pathParts = url.pathname.split("/");
-    const videoId = pathParts[pathParts.length - 1];
-    return `https://www.youtube.com/watch?v=${videoId}`;
+    const newUrl = new URL(url);  /* "new URL(url)" genera un oggetto con: 
+                                        u.hostname => "youtu.be"
+                                        u.pathname => "/7AhtYg_QwjM"
+                                        u.searchParams => {}  // nessun parametro */
+    let videoId = null;
+
+    // URL corto: youtu.be/ID
+    if (newUrl.hostname === "youtu.be") { // newUrl.hostname => "youtu.be"
+      videoId = newUrl.pathname.slice(1); /* rimuove lo slash iniziale "(slice(1))" 
+                                             e memorizza l'ID in videoId */
+    }
+
+    // URL standard: youtube.com/watch?v=ID
+    if (newUrl.hostname.includes("youtube.com")) {  /* includes("youtube.com") verifica 
+                                                       se hostname (youtube.com in questo caso) 
+                                                       contiene la stringa "youtube.com" */
+                                                    
+      videoId = newUrl.searchParams.get("v");  /* newUrl.searchParams è un oggetto nativo di 
+                                                  JavaScript che rappresenta i parametri 
+                                                  della query string dell’URL, ovvero la 
+                                                  parte dell'url che segue "?".
+                                                  Esempio: "https://www.youtube.com/watch?v=7AhtYg_QwjM&t=10"
+                                                            "v" e "t" sono i parametri della query string,
+                                                            newUrl.searchParams.get("v") cerca il parametro v
+                                                            e restituisce il suo valore:
+                                                            newUrl.searchParams.get("v") => 7AhtYg_QwjM    */
+    }
+
+    if (!videoId) return null; // se non viene trovato l'ID
+
+    return `https://www.youtube.com/embed/${videoId}`;
+
   } catch (err) {
-    console.error("Errore conversione URL YouTube:", err);
-    return embedUrl;
+    console.error("URL non valido:", err);
+    
+    return null;
   }
 }

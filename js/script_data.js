@@ -7,7 +7,7 @@ async function loadPerfumes() {
 
 /* --------------------------------------------------------------------- */
 
-// Se siamo nella index.html → mostra lista profumi
+// Se siamo nella index.html -> mostra lista profumi
 if (document.getElementById("perfume-list")) {
   loadPerfumes().then(perfumes => {
     const container = document.getElementById("perfume-list");
@@ -27,7 +27,7 @@ if (document.getElementById("perfume-list")) {
 
 /* --------------------------------------------------------------------- */
 
-// Se siamo in perfume.html → mostra dettagli profumo
+// Se siamo in perfume.html -> mostra dettagli profumo
 if (document.getElementById("perfume-card")) {
   const params = new URLSearchParams(window.location.search);
   const perfumeId = parseInt(params.get("id"));
@@ -53,7 +53,7 @@ if (document.getElementById("perfume-card")) {
       </div>
     `;
 
-    // Gestione video
+    // Gestione videorecensione
     let videoLinkNotEmbedded = "";
     let videoLink = ""; // conterrà il link corretto per l'incorporamento
 
@@ -78,17 +78,15 @@ if (document.getElementById("perfume-card")) {
       descriptionContainer.innerHTML = `
         <h1>Descrizione</h1>
         <h2>${perfume.detailed_description}</h2>
-        <div class="perfume-details">
-          <p><strong>Note di Apertura:</strong></p><li>${perfume.top_notes}</li>
-          <p><strong>Note Centrali:</strong></p><li>${perfume.middle_notes}</li>
-          <p><strong>Note di Base:</strong></p><li>${perfume.base_notes}</li>
-          <br>
-          <p><strong> CARATTERISTICHE </strong>
-          <p><strong>Genere:</strong> ${perfume.genre}</p>
-          <p><strong>Durata:</strong> ${perfume.longevity}</p>
-          <p><strong>Proiezione:</strong> ${perfume.projection}</p>
-          <p><strong>Stagione:</strong> ${perfume.season}</p>
-        </div>
+        <p><strong>Note di Apertura:</strong></p><li>${perfume.top_notes}</li>
+        <p><strong>Note Centrali:</strong></p><li>${perfume.middle_notes}</li>
+        <p><strong>Note di Base:</strong></p><li>${perfume.base_notes}</li>
+        <br>
+        <p><strong> CARATTERISTICHE </strong>
+        <p><strong>Genere:</strong> ${perfume.genre}</p>
+        <p><strong>Durata:</strong> ${perfume.longevity}</p>
+        <p><strong>Proiezione:</strong> ${perfume.projection}</p>
+        <p><strong>Stagione:</strong> ${perfume.season}</p>
       `;
 
       // Creo il pulsante share
@@ -125,6 +123,43 @@ if (document.getElementById("perfume-card")) {
     }
   });
 }
+
+/* --------------------------------------------------------------------- */
+
+// Se siamo in perfume.html -> lista profumi sotto la descrizione
+if (document.getElementById("perfume-list-related")) {
+
+  const params = new URLSearchParams(window.location.search);
+  const perfumeId = parseInt(params.get("id"));
+
+  loadPerfumes().then(perfumes => {
+
+    const container = document.getElementById("perfume-list-related");
+
+    perfumes
+      .filter(p => p.id !== perfumeId) // esclude il profumo attuale
+      .forEach(p => {
+
+        container.innerHTML += `
+          <a href="perfume.html?id=${p.id}" class="perfume-list-card">
+            <div>
+              <img src="${p.image}" 
+                   onerror="this.onerror=null;this.src='img/perfume-placeholder.svg';"
+                   alt="${p.name}"
+                   class="perfume-list-image">
+
+              <h2 class="perfume-list-title">${p.name}</h2>
+              <p class="perfume-list-meta">${p.brand}</p>
+            </div>
+          </a>
+        `;
+
+      });
+
+  });
+
+}
+
 
 /* --------------------------------------------------------------------- */
 // Funzione toast 

@@ -208,6 +208,11 @@ function YoutubeUrlToEmbed (url) {
                                                             newUrl.searchParams.get("v") => 7AhtYg_QwjM    */
     }
 
+    // URL shorts: youtube.com/short/ID
+    if(newUrl.hostname.includes("youtube.com") && newUrl.pathname.startsWith("/shorts/")) {
+      videoId = newUrl.pathname.split("/")[2];
+    }
+
     if (!videoId) return null; // se non viene trovato l'ID
 
     return `https://www.youtube.com/embed/${videoId}`;

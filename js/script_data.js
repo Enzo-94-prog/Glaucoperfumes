@@ -11,7 +11,8 @@ async function loadPerfumes() {
 if (document.getElementById("perfume-list")) {
   loadPerfumes().then(perfumes => {
     const container = document.getElementById("perfume-list");
-    perfumes.forEach(p => {
+    perfumes.reverse();
+    perfumes.forEach(p => {    
       container.innerHTML += `
         <a href="perfume.html?id=${p.id}" class="perfume-card"> 
           <div>

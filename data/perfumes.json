@@ -1291,5 +1291,42 @@
   "detailed_description": "Zagara di Monotheme Venezia è una fragranza agrumata floreale unisex che ruota attorno ai delicati fiori d’arancio. L’apertura fresca di arancia, bergamotto e limone introduce un cuore luminoso di zagara, neroli e petitgrain, che dona alla composizione una sensazione pulita, mediterranea e raffinata. Il fondo di muschio e legni bianchi mantiene il profumo morbido e leggero, ideale per le giornate calde e per chi ama fragranze fresche e naturali.",
   "video_review": "https://youtu.be/qWgqaBhUfZw"
 }
-
+{
+    "id": 69,
+    "name": "Amber Oud",
+    "brand": "Al Haramain",
+    "category": "Eau de Parfum",
+    "notes": "Rosmarino, legno di cedro, ambra, muschio",
+    "top_notes": "Rosmarino, Legno di Cedro, Bergamotto, Limone",
+    "middle_notes": "Spezie, Legno di Cedro, Legno di Guaiaco",
+    "base_notes": "Ambra, Resine, Muschio",
+    "genre": "unisex",
+    "longevity": "buona",
+    "projection": "moderata",
+    "season": "Tutte le stagioni",
+    "price": "€45,00",
+    "image": "img/bottle.png",
+    "description": "Un profumo orientale legnoso, equilibrato e sofisticato.",
+    "detailed_description": "Lanciato nel 2018, Amber Oud di Al Haramain è una fragranza unisex che unisce la freschezza degli agrumi e del rosmarino a un cuore speziato e legnoso, poggiato su una base calda di ambra e resine. È un profumo versatile, noto per il suo equilibrio e la sua eleganza.",
+    "video_review": "https://youtu.be/N8AdSsLOR8U"
+  },
+  {
+    "id": 70,
+    "name": "Shaghaf Oud Ahmar",
+    "brand": "Swiss Arabian",
+    "category": "Eau de Parfum",
+    "notes": "Melone, pesca, vaniglia, oud",
+    "top_notes": "Melone, Pesca, Bergamotto, Fresia, Iris",
+    "middle_notes": "Mela, Ambra, Rosa, Fava Tonka",
+    "base_notes": "Ambra, Vaniglia, Muschio, Sandalo, Legno di Cedro, Legno di Agar (Oud)",
+    "genre": "unisex",
+    "longevity": "ottima",
+    "projection": "forte",
+    "season": "Autunno, Inverno",
+    "price": "€42,00",
+    "image": "img/bottle.png",
+    "description": "Una creazione gourmand avvolgente e fruttata.",
+    "detailed_description": "Shaghaf Oud Ahmar, lanciato nel 2023, è una fragranza unisex che celebra la dolcezza fruttata del melone e della pesca, arricchita da un cuore di rosa e ambra. La base profonda di vaniglia, sandalo e oud conferisce al profumo un carattere opulento e persistente, ideale per i climi più freddi.",
+    "video_review": "https://youtu.be/yuWIAlgW0Q0"
+  }
 ]
